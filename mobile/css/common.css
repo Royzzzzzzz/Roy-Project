@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+html{font-size:14px;}
+body {
+ color:#333;
+ font-size:14px;
+ font-family:돋움, Dotum; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;}
+textarea { resize:none; }
+label { cursor:pointer; }
+.hidden,#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative;  overflow:hidden;}
+#wrap img{
+    width: 100%;
+}
+
+
+/* 헤더공통 */
+
+#headerArea{position: fixed; top: 0; left: 0; width: 100%; height: 60px; z-index: 100; }
+#headerArea .header_top{
+    position: relative;
+    padding: 2% 4.5%;
+}
+#headerArea .header_top h1>a{display: block; text-indent: -9999px; overflow: hidden; color: #fff; width: 85px; height: 29px; background: url(../images/headerlogo.png)no-repeat center; background-size:cover; float: left; position: relative; background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-indent: -9999%;}
+@media screen and (min-width: 640px) {
+    #headerArea .header_top h1>a{background: url(../images/headerlogox2.png)no-repeat center;
+        background-size:cover;}
+   }
+.menu_open{display: block; float: right;  position: relative;  z-index: 110; transition: all .5s;}
+.menu_open span{width: 32px; height: 2px; background: #fff; position: relative; text-indent: -9999px; display: block; margin: 18px 5px; border-radius: 5px; transition: all .3s;}
+.menu_open span::before{content: ''; display: block; width: 32px; height: 2px; background: #fff; position: absolute; top: -9.5px; left: 0; border-radius: 5px; transition: all .3s;}
+.menu_open span::after{content: ''; display: block; width: 32px; height: 2px; background: #fff; position: absolute; top: 9.5px; left: 0; border-radius: 5px; transition: all .3s;}
+
+
+/* on */
+#headerArea.on{background:#fff; box-shadow:0 2px 4px rgba(0,0,0,0.1);}
+#headerArea.on .header_top h1 a{background-image:url(../images/headerlogo.png)}
+#headerArea.on .header_top .menu_open span,
+#headerArea.on .header_top .menu_open span::before,
+#headerArea.on .header_top .menu_open span::after{background:#333;}
+#headerArea.on.mn_open .header_top .menu_open span{background:rgba(255,255,255,0);}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) { /* 2배 이상 */
+    #headerArea .header_top h1 a{background-image:url(../images/headerlogox2.png);}
+    #headerArea.on .header_top h1 a{background-image:url(../images/footlogox2.png)}
+}
+/*메뉴 열렸을때*/
+/* #headerArea.mn_open .menu_open span, #headerArea .header_top .menu_open span::before, #headerArea .header_top .menu_open span::after{background: #fff} */
+#headerArea.mn_open .menu_open span{background: rgba(0,0,0,0);}
+#headerArea.mn_open .menu_open span::before{transform: rotate(45deg); top: 0; background: #333;}
+#headerArea.mn_open .menu_open span::after{transform: rotate(-45deg); top: 0; background: #333;}
+#headerArea.mn_open .modal_box{width: 100%; height: 100%; position: fixed; background: rgba(0,0,0,.8); z-index: 10; top: 0; display: none;}
+
+
+
+/*스크롤 시*/
+#headerArea.sc{background: #fff; border-bottom: 1px solid #ececec;}
+#headerArea.sc .menu_open span{background: #333;}
+#headerArea.sc .menu_open span::before{background: #333;}
+#headerArea.sc .menu_open span::after{background: #333;}
+#headerArea.sc.mn_open .menu_open span{background: rgba(0,0,0,0);}
+#headerArea.sc.mn_open .menu_open span::before{background: #fff;}
+#headerArea.sc.mn_open .menu_open span::after{background: #fff;}
+
+/*gnb영역*/
+#gnb{position: fixed; width: 80%; right:-100%; top:0; opacity: 0; background: #fff; z-index:20; height: 100%; box-sizing: border-box; padding: 3rem 5%;}
+#gnb::before {
+    content: '';
+    display: block;
+    width: 206px;
+    height: 35px;
+    background: url(../images/bluelogox2.png) 0 0 no-repeat;
+    background-size: 90px auto;
+}
+/* #gnb>h3>a{display: block; text-indent: -9999px; overflow: hidden; color: #fff; width: 170px; height: 60px; background: url(../images/bluelogo.png)no-repeat center; background-size:cover; float: left; position: relative; left: -50%; margin-left: -40px; margin-top: 16px;}
+@media screen and (min-width: 640px) {
+#gnb>h3>a{background: url(../images/bluelogox2.png)no-repeat center;
+    background-size:cover;}
+} */
+#gnb .login{overflow: hidden; clear: both;}   
+#gnb .login li{display: block; width: 50%; float: left; font-weight:500; font-size: 1.286rem; padding: 20px 0; text-align: center; background: #f8f8f8; color: #666; margin-top: 16px; position: relative;}
+#gnb .login li:first-of-type::before{content: ''; display: block; width: 1px; height: 24px; background: #ececec; position: absolute; left: 100%; top: 50%; margin-top: -12px; z-index: 10;;}
+#gnb .mainMenu{margin: 32px 0 0 24px;}
+#gnb .mainMenu>li a{display: block; height: 35px; font-weight: 700; font-size: 1.429rem; color: #333; margin-bottom: 20px;}
+#gnb .mainMenu>li a span{font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 1.071rem; color: #999;}
+#gnb .mainMenu>li a i{float: right; font-size: 1rem; margin-right: 24px; line-height: 2.5em;}
+#gnb .mainMenu>li ul{display: none; margin-left: 14px;}
+#gnb .mainMenu>li ul li a{display: block; font-weight: 400; font-size: 1.143rem; color: #666; margin-bottom: 4px;} 
+#gnb .mainMenu>li ul li:last-of-type a{margin-bottom: 20px;}
+
+
+/* 푸터공통 */
+#footerArea{background:#e5e5e5; padding:1.71rem 4.5% 3.2rem; margin:4.28rem 0 0;}
+#footerArea::after{content:''; display: block; clear: both;}
+/* #footerArea .f_logo{float:left; width: 65px; margin:0 0 1.55rem;} */
+#footerArea .f_logo{float:left; width: 65px; height:31px; background:url(../images/footlogox2.png) 0 0 no-repeat; background-size:100% auto; font-size:0; text-indent: -9999%; margin:0 0 1.55rem;}
+
+#footerArea .f_sns{float:right;}
+#footerArea .f_sns li{float:left; margin-left:8px;}
+#footerArea .f_sns li:first-child{margin-left:0;}
+#footerArea .f_sns li a{display:block; width: 30px; height: 30px; border-radius:500px; background-color:#ccc; background-position:50% 50%; background-repeat:no-repeat;}
+#footerArea .f_sns li:first-child i{
+    margin: 12% 11%;
+}
+#footerArea .f_sns li i{
+    font-size: 1.5rem;
+    margin: 12% 20%;
+}
+#footerArea .fnb{overflow:hidden; color:#666; font-size:0.875rem; letter-spacing:-0.025rem; clear:both;}
+#footerArea .fnb li{float:left; margin-right:10px;}
+#footerArea .fnb li:last-child{margin-right:0;}
+#footerArea .fnb li a{display: block;}
+#footerArea .fnb li:nth-child(2) a{color:#333;}
+#footerArea .info{color:#666; font-size:0.875rem; line-height: 1.8; letter-spacing:-0.045rem; margin:1rem 0 0;}
+#footerArea .info address span{display:inline-block; margin-right:10px;}
+#footerArea .info address span:last-child{margin-right:0;}
+#footerArea .info p{letter-spacing:0;}
+#footerArea .family{position:relative; margin:1.6428rem  0 0;}
+#footerArea .family .open{display:block; height: 50px; line-height: 50px; padding:0 1.25rem; color:#666;background-position:96% 50%; background-repeat:no-repeat; background-color:#cecece; background-size:16px auto; transition:all .3s;}
+#footerArea .family i{font-size: 1.25rem; float: right; margin-top: 17px; margin-right: 20px;}
+#footerArea .family .open.on i{transform: rotate(180deg);}
+
+#footerArea .family ul{position:absolute; left:0; bottom:50px; width: 100%; background:#f0f0f0; overflow: hidden; font-size:0.875rem; display: none;}
+#footerArea .family ul li{float:left; width:50%;}
+#footerArea .family ul li a{display: block; height: 40px; line-height: 40px; padding:0 1.25rem;}
+
+/* top move */
+.topMove{position:fixed; right:20px; bottom:20px; z-index:50; display: none;}
+.topMove a{display:block; border-radius: 500px; width: 50px; height: 50px; background-size:16px auto;
+font-size: 2.5rem; color: #fff; text-align: center; line-height: 50px; background: rgb(34, 72, 243);}
+
+
+
+

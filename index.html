@@ -1,0 +1,351 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script>
+      var uAgent = navigator.userAgent.toLowerCase();
+      var mobilePhones = new Array('iphone','ipod','android','blackberry','windows ce','nokia','webos','opera mini','sonyericsson','opera mobi','iemobile');
+
+      for(var i=0;i<mobilePhones.length;i++){
+          if(uAgent.indexOf(mobilePhones[i]) != -1){
+              document.location="/mobile/";
+          }
+      }
+  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대로템</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/main.css">
+    
+    <script src="https://kit.fontawesome.com/96a1703d7f.js" crossorigin="anonymous"></script>
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script src="./mainjs/mainpopup.js"></script>
+  </head>
+  <body>
+      <? include "./common/main_header.html" ?>
+      
+      <div class="visual">
+        <div class="gallery">
+          <ul>
+               <li class="link1"><a href="#"><img src="./images/a1.jpg" alt='메인이미지1' ><span>사람과 사람을<br>이어주는 행복한 기술</span></a></li>
+               <li class="link2"><a href="#"><img src="./images/a2.jpg" alt='메인이미지2' ><span>더 나은 내일을 위한<br>끝없는 움직임</span></a></li>
+               <li class="link3"><a href="#"><img src="./images/a3.jpg" alt='메인이미지3' ><span>세계를 향해<br>나아가는 힘찬 전진</span></a></li>
+         </ul>
+        </div>
+
+        <div class="dock">
+          <span class="mbutton  btn1" ></span>
+          <span class="mbutton  btn2" ></span>
+          <span class="mbutton  btn3" ></span>
+          <span class="ps"><span class="hidden"></span><i class="fa-regular fa-circle-play"></i></span>
+      </div>
+      
+      <span class="btn btnLeft"><i class="fa-solid fa-chevron-left"></i></span>
+      <span class="btn btnRight"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+      <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>
+        <section class="business">
+          <h3>사업분야</h3>
+            <div class="eventSlideMenu">
+              <ul>
+                <li class="img01 eventMenu">
+                  <img src="./images/business1.jpg" alt="레일솔루션">
+                    <div class="bs_title">
+                      <h4>RAIL<br>SOLUTION</h4>
+                      <p>세계 38개국에 전동차, 고속전철 등 다양한 철도차량 공급과 함께 운영,<br> 유지보수사업 및 철도시스템사업 등 철도사업 영역을 확대해 나가고 있습니다.</p>
+                      <span>더보기</span>
+                    </div>
+                    <a href="./sub2/sub2_1.html" class="buttonMenu01"></a>
+                </li>
+                <li class="img02 eventMenu">
+                  <img src="./images/business2.jpg" alt="디펜스솔루션">
+                    <div class="bs_title">
+                      <h4>DEFENSE<br>SOLUTION</h4>
+                      <p>40년이상 최신예 지상장비를 생산하고 있는 체계 대표업체이자 미래 무기체계를<br> 선도하는 기업으로 국민의 안전과 평화에 일익을 담당하고 있습니다.</p>
+                      <span>더보기</span>
+                    </div>
+                    <a href="./sub2/sub2_2.html" class="buttonMenu02"></a>
+                </li>
+                <li class="img03 eventMenu">
+                  <img src="./images/business3.jpg" alt="에코플랜트">
+                    <div class="bs_title">
+                      <h4>ECO<br>PLANT</h4>
+                      <p>다양한 턴키공사 수행 경험을 바탕으로 원가경쟁력과 품질경쟁력을 갖춘<br>종합 플랜트 엔지니어링 기업입니다.</p>
+                      <span>더보기</span>
+                    </div>
+                    <a href="./sub2/sub2_3.html" class="buttonMenu03"></a>
+                </li>
+              </ul>
+            </div>
+        </section>
+        <section class="introduction">
+          <div class="summary">
+            <h3>회사소개</h3>
+            <ul class="about">
+              <li class="kframe">
+                <img src="./images/intro1.jpg" alt="한눈에 보는 현대로템">
+                <dl>
+                  <dt>회사연혁</dt>
+                  <dd>
+                    끊임없는 변화와 도전으로 가치<br>있는 내일을 만들어 갑니다.
+                  </dd>
+                  <dd>
+                    <a href="./sub1/sub1_3.html">더보기</a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="kframe">
+                <dl>
+                  <dt>지배구조</dt>
+                  <dd>현대로템은<br />미래 모빌리티 기술을 이끌어 갑니다.
+                  </dd>
+                  <dd>
+                    <a href="./sub3/sub3_1.html">더보기</a>
+                  </dd>
+                </dl>
+                <img src="./images/intro2.jpg" alt="투자정보">
+              </li>
+              <li class="kframe">
+                <img src="./images/intro3.jpg" alt="재무정보">
+                <dl>
+                  <dt>재무정보</dt>
+                  <dd>기업의 가치와 튼튼한<br>구조를 만들어 갑니다.</dd>
+                  <dd>
+                    <a href="./sub3/sub3_2.html">더보기</a>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="sus wide active">
+          <div class="inner">
+            <h3>지속가능경영</h3>
+            <ul class="sus_box">
+              <li>
+                  <dl>
+                    <dt>환경경영</dt>
+                    <dd>
+                      인권 보호가 기업의 자율적 책임과 관리의 범위를 넘어<br>
+                      법제화로 규정되어 감에 따라 인권경영체계를<br>
+                      새롭게 점검하고 추진해 나가고자 합니다.
+                      <a href="./sub5/sub5_3.html" class="more">
+                        more
+                        <i class="fa-solid fa-angle-right"></i>
+                      </a>
+                    </dd>
+                    
+                  </dl>
+                  <img src="./images/sus1.jpg" alt="윤리경영 이미지">
+              </li>
+
+              <li>
+                  <dl>
+                    <dt>사회공헌</dt>
+                    <dd>
+                      신뢰경영,상생추구, 인류애실현”의 사회공헌 가치를<br>
+                      기반으로 인간존중의 가치를 실현하고, 미래세대의 삶의 질
+                      향상을 위해<br>
+                      적극적인 사회적 책임을 이행 추구 합니다.
+                      <a href="./sub5/sub5_4.html" class="more">
+                        more
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    </dd>
+                    
+                    
+                  </dl>
+                  <img src="./images/sus2.jpg" alt="사회공헌 이미지">
+              </li>
+            </ul>
+            <ul class="link">
+              <li>
+                <a href="./sub5/sub5_1.html">지속가능경영</a>
+              </li>
+              <li>
+                <a href="./sub5/sub5_2.html">윤리경영</a>
+              </li>
+              <li>
+                <a href="./sub1/sub1_4.html">CI</a>
+              </li>
+              <li>
+                <a href="./sub1/sub1_1.html">기업개요</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="news">
+          <div class="news_inner">
+            <h3>뉴스</h3>
+ 
+              <div class="media_box_wrap">
+                <div class="movebox">
+                  <ul class="media_box">
+                    <li class="play">
+                      <a href="#">
+                        <div class="image">
+                          <img class="image"
+                            src="./images/news1.jpg"
+                            alt="뉴스사진1">
+                        </div>
+                        <dl>
+                          <dt>현대로템, 해병대 장병 자녀 장학금 전달</dt>
+                          <dd>2020-08-11</dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <li class="play">
+                      <a href="#">
+                        <div class="image">
+                          <img
+                            src="./images/news2.jpg"
+                            alt="뉴스사진2">
+                        </div>
+                        <dl>
+                          <dt>의왕 에코 플로깅 릴레이 챌린지 참여</dt>
+                          <dd>2022-06-20</dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <li class="play">
+                      <a href="#">
+                        <div class="image">
+                          <img src="./images/news3.jpg"
+                            alt="뉴스사진5">
+                        </div>
+                        <dl>
+                          <dt>현대로템, 6.25 참전용사에 ‘희망박스’ 전달</dt>
+                          <dd>2021-12-02</dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <li class="play">
+                      <a href="#">
+                        <div class="image">
+                          <img src="./images/news4.jpg"
+                            alt="뉴스사진3">
+                        </div>
+                        <dl>
+                          <dt>현대로템 3사랑회, 무료급식소 식자재 지원</dt>
+                          <dd>
+                            2021-02-08</dd>
+                        </dl>
+                      </a>
+                    </li>
+                    <li class="play">
+                      <a href="#">
+                        <div class="image">
+                          <img src="./images/news5.jpg"
+                            alt="뉴스사진4">
+                        </div>
+                        <dl>
+                          <dt>현대로템, 저소득 국가유공자 후원금 전달</dt>
+                          <dd>
+                            2020-06-12</dd>
+                        </dl>
+                      </a>
+                    </li>
+                    
+                  
+                  </ul>
+                </div>
+              </div>
+              
+            
+            <ul class="news_btn">
+              <li>
+                <a href="#" class="btnPrev"><span class="hidden">이전</span><i class="fa-solid fa-circle-left"></i></a>
+              </li>
+              <li>
+                <a href="#" class="btnNext"><span class="hidden">다음</span><i class="fa-solid fa-circle-right"></i></a>
+              </li>
+              <li>
+                <a href="#" class="more"><span class="hidden">더보기</span><i class="fa-solid fa-circle-plus"></i></a>
+              </li>
+            </ul>
+          </div>
+            
+        </section>
+        <section class="recruit">
+          <div class="recruit_inner">
+            <img src="./images/recruitbg1.jpg" alt="인재채용">
+            <h3>인재채용</h3>
+            <p>현대로템과 함께 할 역량있는 인재를 찾습니다</p>
+            <ul>
+              <li>
+                <a href="./sub6/sub6_1.html">
+                  <img src="./images/recruit1.jpg" alt="인사제도 사진">
+                  <dl>
+                    <dt>인사제도</dt>
+                    <dd>현대로템 구성원은 누구나 하나된 가치를 공유합니다</dd>
+                    <dd class="more">더보기</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="./sub6/sub6_2.html">
+                  <img src="./images/recruit2.jpg" alt="직무소개 사진">
+                  <dl>
+                    <dt>직무소개</dt>
+                    <dd>현대로템의 다양한 직무분야를 소개합니다</dd>
+                    <dd class="more">더보기</dd>
+                  </dl>
+                </a>
+              </li>
+              <li>
+                <a href="./sub6/sub6_3.html">
+                  <img src="./images/recruit3.jpg" alt="채용가이드 사진">
+                  <dl>
+                    <dt>채용가이드</dt>
+                    <dd>현대로템과 꿈을 함께 할 최고의 인재를 찾습니다</dd>
+                    <dd class="more">더보기</dd>
+                  </dl>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+      <? include "./common/main_footer.html" ?>
+      <script src="./mainjs/move.js"></script>
+      <script src="./mainjs/main.js"></script>
+      <script src="./common/js/keyframe.js"></script>
+      
+
+    <!-- 공지팝업 -->
+    
+    <div id="showimage" style="z-index:40;position:absolute;width:320px;left:1200px;top:600px;">
+      <script>
+        function closeWin(){
+          var chk = document.getElementById('Notice')
+          if ( chk.checked ) {
+                setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+            }
+        }
+      if ( getCookie( "Notice" ) == "done" ) {
+          hidebox();
+      }
+    </script>
+        <div>
+              <img src="./popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+        </div>
+        <div style="font-size:12px;text-align:center;color:#333;">
+          <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+        <a href="#"  onclick="closeWin();hidebox();return false;"> [close] </a>
+      </div>
+    </div>
+
+  </body>
+</html>

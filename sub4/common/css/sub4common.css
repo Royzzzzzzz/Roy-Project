@@ -1,0 +1,114 @@
+@keyframes sub_visual{
+    from{transform:scale(1.1);}
+    to{transform:scale(1);}
+}
+/* 서브페이지 공통영역 */
+.visual{
+    width: 2000px; 
+    height: 500px; 
+    background: #000; 
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin-left: -1000px;
+    overflow: hidden;
+}
+.visual h3{
+    font-size: 2.5em;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    margin-left: -74px;
+    font-weight: 400;
+}
+.visual img{animation:sub_visual 5s 1 ease-out;}
+.visual .visual_text {
+    left: 0;
+    top: 320px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+.visual .visual_text p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 1.125em;
+}
+.subNav{
+    border-bottom: 1px solid #ccc;
+}
+.subNav ul{
+    width: 1200px;
+    margin: 0 0 0 170px;
+    overflow: hidden;
+    padding-left: 480px;
+}
+.subNav ul li{
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+.subNav ul li a{
+    display: block;
+    padding: 20px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+.subNav ul li a:hover{
+    background: #0a2369;
+    color: #fff;
+    font-weight: 500;
+}
+.current{
+    background: #0a2369;
+    color: #fff !important;
+}
+
+#content{
+    width: 1200px;
+    margin: 0 auto;
+}
+#content .titleArea{
+    position: relative;
+}
+#content .titleArea .lineMap{
+    margin: 100px 0 40px 515px;
+    color: #999;
+}
+#content .titleArea h2{
+    font-size: 3rem;
+    font-weight: 700;   
+    margin: 40px 0 100px 0;
+    text-align: center;
+}
+#content .titleArea .subtext{
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0;
+    animation: text .6s ease-out forwards;
+}
+#content .titleArea .subtext::after {
+    content: '';
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    height: 40px;
+    width: 5px;
+    background: #0a2369;
+    animation: text .6s ease-out forwards;
+}
+
+
+/* sub4 공통 - 비주얼/서브네비/타이틀영역 */
+
+
+
+#content{width: 1200px; margin: 0 auto;}
+#content .title_area{position: relative; padding: 80px 0 140px; text-align: center;}
+#content .title_area::before{content: ''; display: block; width: 1px; height: 70px; background: #FF0000; position: absolute; left: 50%; top: 340px;}
+/* #content .line_map{position: absolute; right: 15px; top: 15px;} */
+#content .line_map{margin-bottom: 16px; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; color: #999; position: relative;}
+#content .title_area h2{font-size: 3.125em; margin-bottom: 16px; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; color: #333;}
+#content .title_area p{font-size: 1.5em; font-family: 'Noto Sans KR', sans-serif; font-weight: 400; color: #666;}
+#content .title_area p span{font-family: 'Roboto', sans-serif; font-weight: 500; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; color: #0a2369;}

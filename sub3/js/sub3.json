@@ -1,0 +1,60 @@
+{
+    "person": [
+      {
+        "path":"./images/content1/person1.jpg",
+        "name":"이용배",
+        "position":"대표이사",
+        "day":"20.03",
+        "since":"3년",
+        "career":"(前)현대차증권 대표이사 사장"
+      },
+      {
+        "path":"./images/content1/person2.jpg",
+        "name":"김두홍",
+        "position":"재경본부장",
+        "day":"22.03",
+        "since":"3년",
+        "career":"(前)현대다이모스 재경본부장"
+      },
+      {
+        "path":"./images/content1/person3.jpg",
+        "name":"김정훈",
+        "position":"철도사업본부장",
+        "day":"21.03",
+        "since":"3년",
+        "career":"(前)현대로템 해외사업실장"
+      },
+      {
+        "path":"./images/content1/person4.jpg",
+        "name":"정태학",
+        "position":"감사위원회 위원장",
+        "day":"20.03",
+        "since":"3년",
+        "career":"(現) 법무법인 율촌 변호사<br>(前) 수원지방법원 부장판사"
+      },
+      {
+        "path":"./images/content1/person5.jpg",
+        "name":"여형구",
+        "position":"감사위원회 위원",
+        "day":"22.03",
+        "since":"3년",
+        "career":"(現) 김·장 법률사무소 고문<br>(前) 평창올림픽조직위 부위원장 겸 사무총장"
+      },
+      {
+        "path":"./images/content1/person6.jpg",
+        "name":"전상경",
+        "position":"감사위원회 위원",
+        "day":"22.03",
+        "since":"3년",
+        "career":"(現) 한양대학교 파이낸스경영학과 교수<br>(前) 한국재무관리학회 회장"
+      },
+      {
+        "path":"./images/content1/person7.jpg",
+        "name":"윤지원",
+        "position":"투명경영위원회 위원",
+        "day":"22.03",
+        "since":"3년",
+        "career":"(現) 상명대학교 국가안보학과 교수<br>(前) 평택대 외교안보전공 교수"
+      }
+    ]
+  }

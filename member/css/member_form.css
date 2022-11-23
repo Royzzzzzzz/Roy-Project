@@ -1,0 +1,145 @@
+.hidden{display: block; position: absolute; z-index: 10; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff}
+input::placeholder{color:rgba(0,0,0,0.3);}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* 회원가입 */
+.wrap{
+    width: 100%;
+    overflow: hidden;
+    background: #eef;
+}
+
+.rotem_logo {
+    display: block;
+    width: 214px;
+    height: 60px;
+    background: url(../../images/rotem_logo.png) 0 0 no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+    margin: 50px auto 32px;
+    margin-top: 50px;
+}
+
+#content{width: 700px; margin: 20px auto;
+    padding: 70px; font-family: 'Nanum Gothic', sans-serif; color: #000; background: rgba(255, 255, 255, .9); box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 20%); border-radius: 10px;} 
+
+.member_top{
+    text-align: center;
+}
+.member_top h2{
+    font-size: 2rem;
+}
+.member_top p{
+    margin: 15px 0;
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.red{
+    color: red;
+}
+table{
+    width: 700px;
+}
+tbody tr{
+    line-height: 2rem;
+}
+tbody td{
+    display: block;
+}
+.row th{
+    display: block;
+}
+.row label{
+    display: block;
+    font-weight: 500;
+    font-size: 0.875em;
+    margin: 10px 0 8px 10px;
+}
+.row th label{
+    float: left;
+}
+input{
+    width: 100%;
+    height: 56px;
+    border: 1px solid #ececec;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .8);
+    padding: 12px 16px 13px 16px;
+    box-sizing: border-box;
+    font-size: 1.125em;
+    font-weight: 500;
+}
+.member_hp, .hp{ 
+    width: 210px;
+}
+input, textarea, select {
+    width: 100%;
+    height: 56px;
+    border: 1px solid #ececec;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .5);
+    padding: 12px 16px 13px 16px;
+    box-sizing: border-box;
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
+/* 메일 */
+.member_mail, .mail {
+    width: 320px;
+}
+
+
+/* 버튼 */
+.member_btn_wrap {
+    margin-top: 56px;
+}
+.btn_wrap {
+    margin-top: 32px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: unset;
+}
+.btn_wrap2 li {
+    float: left;
+    width: 50%;
+}
+.btn_wrap2 li:nth-child(1) .btn {
+    border: 1px solid #0a2267;
+    background: #0a2267;
+    color: #fff;
+    margin-right: 8px;
+    box-sizing: border-box;
+}
+.btn_wrap .btn {
+    display: block;
+    padding: 16px 0 17px;
+    border-radius: 4px;
+    border: 1px solid #0a2267;
+    background: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    color: #0a2267;
+    position: relative;
+    box-sizing: border-box;
+}
+.btn_wrap li:first-child .btn::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: rgba(255,255,255,.15);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .2s;
+    transform: translate(0px, 160%) scale(1.2, 2);
+}
+.btn_wrap li:first-child:hover .btn::before{transform: translate(0,0) scale(1.2,2);}
+

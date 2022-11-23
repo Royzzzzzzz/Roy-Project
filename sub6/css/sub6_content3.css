@@ -1,0 +1,133 @@
+/* 인사제도 본문영역 */
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#content .titleArea .subtext:first-of-type{
+    font-size: 2em;
+    color: #666; 
+    font-weight: 400;   
+}
+#content .titleArea .subtext span:first-child{
+    font-size: 2rem;
+    color: #0a2369; 
+    font-weight: 500;   
+}
+.susContent > p{
+    margin: 150px 0;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pop{
+    width: 100%;
+    margin: 100px 0;
+}
+.pop h3{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 150px 0;
+}
+.pop ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.pop ul i{
+    color: rgba(25, 121, 187, .8);
+    font-size: 6em;
+}
+.pop ul li:first-child span{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: -12px;
+}
+.pop ul li:nth-child(2) span{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: -15px;
+}
+.pop ul li:nth-child(3) span{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: -15px;
+}
+.pop ul li:nth-child(4) span{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 8px;
+}
+.pop ul li:hover i{
+    color: #0a2369;
+}
+.pop .modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: #000; opacity: .7; display: none;}
+
+.pop .pop_btn{position:absolute;z-index: 60; top:50%; margin-top: -100px; font-size: 100px; width: 100%; display: none;}
+.pop .pop_btn a{display: block; position: absolute; top:0; left:50%; color: #fff; opacity: .4; transition: all .5s;}
+.pop .pop_btn a:hover{opacity: .9;}
+.pop .pop_btn .pre{margin-left: -500px;}
+.pop .pop_btn .next{margin-left: 430px;}
+
+.pop  .popup{position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; 
+    width: 700px; height: 700px; background: #fff; box-shadow: 1px 3px 7px 0px #666;
+    z-index: 60; display:none;}
+.pop  .popup img{width: 94%; margin:20px 3%;}
+.pop  .popup dl{width: 94%; margin:10px 3%; text-align: center;}
+.pop  .popup dt{font-size: 1.2em; font-weight: bold; margin-bottom: 10px; color: #0a2369;}
+.pop  .popup dd{
+    text-align: justify;
+}
+.pop  .popup dd span{
+    font-weight: 500;
+    font-size: 1.125em;
+}
+.pop  .popup .close_btn{position: absolute; top: 25px; right: 5px; 
+    display: block; text-indent: -999px; overflow: hidden; width: 32px; 
+    height: 32px; padding: 9px 9px; background: url(../images/cancel.png) no-repeat;}
+
+
+
+.faq{width:1200px; border-bottom:1px solid #ddd; margin-bottom: 100px;}
+.faq h2{
+    font-size: 2em;
+    text-align: center;
+}
+.faq .all > i{
+    font-size: 2em;
+    color: #0a2369;
+}
+.faq .hgroup{position:relative;margin:0 0 20px 0;}  
+.faq .hgroup .all{position:absolute; top:5px; right:10px;  font-size: 1.5em; }  
+.faq .article{
+    background: #fff;
+}
+.faq .article:first-child{
+    border-top: 2px solid #999;
+}
+.faq .q{border-top:1px solid #ddd} 
+.faq .q a{
+    font-size: 1.25em;
+    margin-left: 50px;
+}
+.faq .q a i{
+    margin-right: 80px;
+    font-size: 1.25em;
+    color: #999;
+}
+.faq .q:hover a i{
+    margin-right: 80px;
+    font-size: 1.25em;
+    color: #0a2369;
+}
+.faq .q a.trigger{display:block;padding:40px 15px;background:#fff;color:#666;}  
+.faq .hide .q a.trigger{font-weight:normal;background:none}  
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{color:#000}  
+.faq .a{font-size: 1.25em; background: #edf2fb; padding:10px 15px 10px 170px;line-height:1.5em; text-align: justify; overflow:hidden; display: none;} 
+
+.hidden{display: block; position: absolute; left:-1000%; top:0; width: 1px;
+        height: 1px; overflow: hidden; color: #fff;}

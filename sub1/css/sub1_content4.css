@@ -1,0 +1,75 @@
+/* 기업개요 본문영역 */
+#content .titleArea p{
+    font-size: 2.250em;
+    color: #0a2369;
+    text-align: center;
+    padding-bottom: 100px;
+    font-weight: 400;
+}
+#content .contentArea h3{
+    font-size: 2.25em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif; 
+    margin: 40px 0;
+}
+#content .contentArea img{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .3);
+}
+#content .contentArea h4{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 40px 0;
+    color: #0a2369;
+}
+#content .contentArea p{
+    font-size: 1em;
+    text-align: justify;
+}
+#content .contentArea .logotype{
+    width: 100%;
+    height: 400px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .3);
+    margin-bottom: 60px;
+}
+#content .contentArea ul{
+    
+}
+#content .contentArea ul li{
+    display: flex;
+    padding: 60px 60px 0 100px;
+    color: #0a2369;
+    text-align: justify;
+}
+#content .contentArea ul li span{
+    font-size: 1.5em;
+    margin-right: 100px;
+}
+#content .contentArea ul li p{
+    font-size: 2em;
+    font-weight: 600;
+}
+#content .contentArea .logotype p{
+    text-align: justify;
+}
+#content .contentArea .blue_square{
+    float: left;
+    width: 150px;
+    height: 150px;
+    background: #0a2369;
+    margin-right: 100px;
+}
+#content .contentArea .blue_con{
+    line-height: 30px;
+    margin:100px 0;
+}
+#content .contentArea .red_square{
+    float: left;
+    width: 150px;
+    height: 150px;
+    background: #FF0000;
+    margin-right: 100px;
+}
+#content .contentArea .red_con{
+    line-height: 30px;
+    margin-bottom: 200px;
+}

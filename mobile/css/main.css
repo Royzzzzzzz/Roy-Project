@@ -1,0 +1,254 @@
+/* CSS Document */
+@keyframes vis_slogan {
+    from{transform:translateY(2rem); opacity: 0;}
+    to{transform:translateY(0); opacity: 1;}
+}
+.visual .gallery ul li .slogan.active strong{
+    animation: vis_slogan 1 .5s ease-out; animation-delay:.5s; animation-fill-mode:forwards;}
+
+.visual{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.visual .gallery{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 300%;
+    overflow: hidden;
+}
+.visual .gallery ul li{
+    float: left;
+    position: relative;
+    width: 33.333%;
+}
+.visual .gallery ul li .slogan{
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    color: #fff;
+    line-height: 1.5;
+    text-shadow: 2px 2px 2px gray;
+}
+.visual .gallery ul li .slogan strong{
+    display: block;
+    font-size: 2rem;
+    letter-spacing: -0.015rem;
+    opacity: 0;
+}
+.visual .gallery ul li img{
+    width: 100%;
+}
+.visual .cnt{
+    position: absolute;
+    left: 15%;
+    bottom: 5rem;
+    color: #fff;
+}
+.visual .cnt span{
+    display: block;
+    width: 20px;
+    text-align: center;
+    line-height: 2;
+}
+.visual .cnt span + span{
+    border-top: 1px solid #fff;
+}
+.visual .dock{
+    position: absolute;
+    left: 22%;
+    bottom: 7rem;
+    font-size: 0;
+}
+.visual .dock span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background: #333;
+    margin-right: 15px;
+}
+.visual .dock span.on{
+    background: #64bde1;
+}
+
+/* 사업영역 */
+#content .box{background: #fff;  margin: 50px 0;}
+.box >h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.box .swiper{width: 100%; height: 100%; padding: 30px 0 70px; position: relative;}
+.box .swiper-slide .circle{
+    margin: 10px 0;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-right: -7%;
+}
+.box .swiper-slide .circle a{display: block;
+    float: left;
+    font-weight: 500;
+    font-size: 0.929em;
+    padding: 14px 16px;
+    border-radius: 100px;
+    text-align: center;
+    margin-right: 16px;
+    transition: all .3s;
+    color: #fff;
+    background: #1979bd;
+}
+.box .swiper-slide{width: 100%; position: relative; }
+.box .swiper-slide a{display: block; height: 100%; margin: 0 20px; text-align: center; font-size: 18px; border-radius: 24px; background: #fff; box-shadow: 2px 2px 30px 0 rgb(0 0 0 / 5%);
+    display: flex; justify-content: center;align-items: center;  
+    flex-wrap: nowrap; } 
+.box .swiper-slide h4{position: absolute; font-weight: 700; color: #fff; font-size: 2em; } 
+.box .swiper-slide img{width: 100%; border-radius: 24px 24px 24px 24px;}
+.box .swiper-slide p span{display: block; font-weight: 700; font-size: 1.143rem; color: #1979bd; margin: 14px 0 4px;}
+.box .swiper-slide p{font-size: 1.143rem; color: #333; padding: 0 24px 14px; margin-bottom: 16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; text-align: center;}
+.box .btn_box{position: relative; top: 24px; font-size: 2rem;}
+.box .btn_box a{color: rgba(0,0,0,.3);}
+.box .swiper-button-prev{left: 50%; margin-left: -38px;}
+.box .swiper-button-next{right: 50%; margin-right: -38px;}
+.box .swiper-button-prev::after{content: none;}
+.box .swiper-button-next::after{content: none;}
+/* 지속가능경영 */
+
+.sus{
+    margin: 2.5rem 0 0;
+    padding: 2rem 0 5% 0;
+    background:  #f2f2f2;
+    background-size: 100% auto;
+}
+.sus >h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.sus ul li {
+    width: 100%;
+}
+.sus ul li a{
+    display: flex;
+    align-items: center;
+}
+.sus ul li div{
+    width: 50%;
+    padding-left: 5%;
+}
+.sus ul li div h4{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.sus ul li div p{
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+/* .sus ul li:last-child{
+    margin: 40% 0 0 0;
+    display: inline-block;
+} */
+#content .sus ul li img {
+    width: 50%;
+}
+
+
+/*프로모션 영역*/
+#content .promotion h3{padding: 30px 0; font-size: 2.5rem; text-align: center; font-weight: 700;}
+#content .promotion p{color: #999; text-align: center;}
+#content .promotion{background: #f8f8f8;}
+.promotion .swiper{width: 100%; height: 100%; padding: 30px 0 70px; position: relative;}
+.promotion .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+.promotion .swiper-slide{width: 100%;}
+.promotion .swiper-slide a{display: block; height: 100%; margin: 0 20px; text-align: center; font-size: 18px; border-radius: 24px; background: #fff; box-shadow: 2px 2px 30px 0 rgb(0 0 0 / 5%);}
+.promotion .swiper-slide img{width: 100%; border-radius: 24px 24px 0 0;}
+.promotion .swiper-slide p span{display: block; font-weight: 700; font-size: 1.143rem; color: #1979bd; margin: 14px 0 4px;}
+.promotion .swiper-slide p{font-size: 1.143rem; color: #333; padding: 0 24px 14px; margin-bottom: 16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; text-align: center;}
+.promotion .btn_box{position: relative; top: 24px; font-size: 2rem;}
+.promotion .btn_box a{color: rgba(0,0,0,.3);}
+.promotion .swiper-button-prev{left: 50%; margin-left: -38px;}
+.promotion .swiper-button-next{right: 50%; margin-right: -38px;}
+.promotion .swiper-button-prev::after{content: none;}
+.promotion .swiper-button-next::after{content: none;}
+
+/*동영상팝업*/
+#content .modal_box2{position: fixed; left: 0; top: 0; z-index: 110; width: 100%; height: 100%; background: #000; opacity: .7; display:none;} 
+#content  .popup{position: fixed; top: 30%; left: 50%; margin: 0 0 0 -45%; width: 90%; height: auto; background: #fff; box-shadow: 2px 2px 30px 0 rgb(0 0 0 / 5%); border-radius: 14px; z-index: 120; display:none;}
+#content .popup #Video{border-radius: 14px 14px 0 0; width: 100%;}
+#content .popup p{color: #666; line-height: 1.5em; padding: 10px 10px 14px;}
+#content .popup p span{display: block; font-family: 'Roboto', sans-serif; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; color: #1979bd;}
+#content .popup .close_btn{position: absolute; bottom: -50px; left: 50%; display: block; overflow: hidden; color: #fff; font-size: 1.143em; padding: 2px 8px 2px 8px; border: 2px solid #fff; border-radius: 100%; margin: 0 0 0 -15.5px;}
+
+
+#content .recruit h3{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+}
+#content .recruit p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #666;
+}
+#content .recruit{
+    position: relative;
+}
+#content .recruit >img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 120%;
+}
+#content .recruit ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#content .recruit .rule{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 80%;
+}
+#content .recruit .rule img{
+    width: 100%;
+    border-radius: 20px;
+    filter:brightness(70%);
+}
+#content .recruit .rule{
+    margin-top: 5%;
+}
+#content .recruit .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#content .recruit div:last-child{
+    text-align: center;
+}
+#content .recruit div:last-child h4{
+    font-size: 2.75rem;
+    color: #fff;
+    font-weight: 500;
+}
+#content .recruit div:last-child p{
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+}

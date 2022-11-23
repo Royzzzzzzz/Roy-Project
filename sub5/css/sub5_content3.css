@@ -1,0 +1,180 @@
+@charset "utf-8";
+v\:group,
+v\:shape,
+v\:line,
+v\:polyline,
+v\:rect,
+v\:oval,
+v\:fill {
+	behavior : url(#default#VML);
+}
+
+v\: * {behavior : url(#default#VML);}
+/* 환경경영 본문영역 */
+.main img{
+    width: 2000px; 
+    height: 500px; 
+}
+#content .titleArea .subtext{
+    font-weight: 500;
+}
+.contentArea .roadMap h2{
+    font-size: 1.5em;
+    margin: 150px 0 50px 0;
+    text-align: center;
+}
+.contentArea .roadMap > div p:first-child{
+    font-size: 1.75em;
+    font-weight: 600;
+    text-align: center;
+}
+.contentArea .roadMap > div p:last-child{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contentArea .roadMap .order{
+    padding: 50px 0;
+    display: flex;
+}
+.contentArea .roadMap .order dl{
+    width: 250px;
+    height: 250px;
+    border: 2px solid #333;
+    background: #fff;
+    border-radius: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+.contentArea .roadMap .order dl dt{
+    padding-top: 60px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    position: relative;
+}
+.contentArea .roadMap .order dl dt::after{
+    content: '';
+    position: absolute;
+    top: 105px;
+    left: 65px;
+    height: 2px;
+    width: 120px;
+    background: #0c4da2;
+    animation: text .6s ease-out forwards;
+}
+.contentArea .roadMap .order dl::before{
+    content:"\f061";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 120px;
+    left: 268px;
+}
+.contentArea .roadMap .order dl:last-child:before{
+    display: none;
+}
+.contentArea .roadMap .order dl dd{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+.enviro02 h2{
+    font-size: 1.5em;
+    margin-top: 100px;
+    text-align: center;
+}
+.enviro02 .carbon p:first-child{
+    font-size: 1.5em;
+    line-height: 1.4em;
+    margin-top: 40px;
+    text-align: center;
+}
+.enviro02 .carbon p:nth-child(2){
+    font-size: 1.7em;
+    line-height: 1.4em;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+.enviro02 .carbon p:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 300px;
+    height: 1px;
+    width: 600px;
+    background: #0c4da2;
+}
+.enviro02 .carbon p:nth-child(3){
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 500;
+}
+.enviro02 .carbon p:nth-child(4){
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: #0c4da2;
+}
+
+.enviro02 .secCon h3{
+    font-size: 1.25em;
+    margin-top: 100px;
+    text-align: center;
+}
+.enviro02 .strategy{
+    display: flex;
+    margin: 50px 0;
+}
+
+.enviro02 .strategy div{
+    background: #fff;
+    border: 1px solid #666;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+.enviro02 .strategy div p:first-child{
+    display: flex;
+    text-align: center;
+    font-size: 1.25em;
+    min-height: 72px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+}
+.enviro02 .strategy div p:last-child{
+    text-align: center;
+    min-height: 72px;
+    justify-content: center;
+}
+.enviro02 .strategy div p span{
+    font-weight: 700;
+    color: #0c4da2;
+}
+
+
+.background text{fill:#666;font-family:'나눔고딕', '돋움', Dotum;font-size:11px}
+ul.accessibility {font-size: 1px;height: 1px; line-height: 1px; overflow: hidden; width: 1px;}
+.background .fields text{fill:#666;font-family:'나눔고딕', '돋움', Dotum;font-size:11px}
+.foreground .labels text{fill:#666;font-family:'나눔고딕', '돋움', Dotum;font-size:11px}
+.tooltip text{fill:#777;font-family:'나눔고딕', '돋움', Dotum;font-size: 11px;}
+.tooltip rect{fill:rgba(255,255,255,0.9);stroke:#ccc;stroke-width:0.5;}
+.fields text{fill:#666;font-family:'나눔고딕', '돋움', Dotum;font-size:11px}
+.guide_line{stroke:#4010ad;stroke-width:1}
+
+/*stacked_column*/
+.Nwagon_stacked_column .background line.h{stroke:#000;stroke-width:0.2;}
+.Nwagon_stacked_column .background line.v{stroke:#000;stroke-width:0.1;}
+.Nwagon_stacked_column .foreground .columns g rect{fill-opacity:0.9;cursor:pointer;}
+.Nwagon_stacked_column .foreground .tooltip text{fill:#777;font-size: 9px;}
+.Nwagon_stacked_column .foreground .tooltip rect{fill:rgba(255,255,255,0.9);stroke:#ccc;stroke-width:0.5;}
+.Nwagon_stacked_column .labels text, .Nwagon_stacked_column .background text{fill:#666;font-size:11px;}

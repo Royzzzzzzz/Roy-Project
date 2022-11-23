@@ -1,0 +1,362 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투자정보-신용등급</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content3.css">
+
+    <script src="https://kit.fontawesome.com/96a1703d7f.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+          <? include "../common/sub_header.html" ?>
+          <div class="visual">
+            <img src="./common/images/topbg.jpg" alt="">
+            <h3>투자정보</h3>
+          </div>
+
+          <div class="subNav">
+            <ul>
+                <li><a href="./sub3_1.html">지배구조</a></li>
+                <li><a href="./sub3_2.html">재무정보</a></li>
+                <li><a class="current" href="./sub3_3.html">신용등급</a></li>
+                <li><a href="./sub3_4.html">공시자료</a></li>
+            </ul>
+          </div>
+
+          <div id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt;<span> 투자정보 </span>&gt;      <strong> 신용등급 </strong>
+                </div>
+            </div>
+            <section class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+                
+              <div class="summary">
+                <h2>신용등급</h2>
+                <p>“<span>현대로템의 주요 재무현황</span>을 확인하실 수 있습니다.”</p>
+              </div>
+            <div class="tabs">
+                <ul class="tab_menu">
+                  <li>
+                    <a class="tab tab1" href="#">신용등급</a>
+                  </li>
+                  <li>
+                    <a class="tab tab2" href="#">등급정의</a>
+                  </li>
+                </ul>
+              
+              <div class="contlist">
+                <div class="table1">
+                  <h3>ESG 등급현황</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>구분</th>
+                        <th>회사채</th>
+                        <th>기업어음</th>
+                        <th>Outlook</th>
+                        <th>최종평가</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td>한국기업평가</td>
+                          <td>BBB+</td>
+                          <td>A3+</td>
+                          <td>Stable+</td>
+                          <td>2020년 4월</td>
+                      </tr>
+                      <tr>
+                          <td>한국신용평가</td>
+                          <td>BBB+</td>
+                          <td>-</td>
+                          <td>Stable</td>
+                          <td>2020년 3월</td>
+                      </tr>
+                      <tr>
+                          <td>한국신용정보</td>
+                          <td>BBB+</td>
+                          <td>A3+</td>
+                          <td>Stable</td>
+                          <td>2020년 3월</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="table1">
+                  <h3>신용등급 변동 현황</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>구분</th>
+                        <th>회사채</th>
+                        <th>기업어음</th>
+                        <th>Outlook</th>
+                        <th>최종평가</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td rowspan="6">한국기업평가</td>
+                          <td>BBB+</td>
+                          <td>A3+</td>
+                          <td>Stable</td>
+                          <td>2020년 4월</td>
+                      </tr>
+                      <tr>
+                          <td>A-</td>
+                          <td>A2-</td>
+                          <td>Stable</td>
+                          <td>2019년 6월</td>
+                      </tr>
+                      <tr>
+                          <td>A</td>
+                          <td>A2</td>
+                          <td>Stable</td>
+                          <td>2018년 6월</td>
+                      </tr>
+                      <tr>
+                          <td>A0</td>
+                          <td>A2</td>
+                          <td>Stable</td>
+                          <td>2017년 6월</td>
+                      </tr>
+                      <tr>
+                          <td>A0</td>
+                          <td>A2</td>
+                          <td>Negative</td>
+                          <td>2016년 6월</td>
+                      </tr>
+                      <tr>
+                          <td>A+</td>
+                          <td>A2+</td>
+                          <td>Negative</td>
+                          <td>2015년 6월</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>구분</th>
+                        <th>회사채</th>
+                        <th>기업어음</th>
+                        <th>Outlook</th>
+                        <th>최종평가</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td rowspan="6">한국신용평가</td>
+                          <td>BBB+</td>
+                          <td>-</td>
+                          <td>Stable</td>
+                          <td>2020년 3월</td>
+                      </tr>
+                      <tr>
+                          <td>A-</td>
+                          <td>-</td>
+                          <td>Stable</td>
+                          <td>2019년 6월</td>
+                      </tr>
+                      <tr>
+                          <td>A</td>
+                          <td>-</td>
+                          <td>Stable</td>
+                          <td>2018년 5월</td>
+                      </tr>
+                      <tr>
+                          <td>A0</td>
+                          <td>A2</td>
+                          <td>Stable</td>
+                          <td>2017년 6월</td>
+                      </tr>
+                      <tr>
+                          <td>A0</td>
+                          <td>A2</td>
+                          <td>Negative</td>
+                          <td>2016년 9월</td>
+                      </tr>
+                      <tr>
+                          <td>A+</td>
+                          <td>A2+</td>
+                          <td>Stable</td>
+                          <td>2015년 6월</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>구분</th>
+                        <th>회사채</th>
+                        <th>기업어음</th>
+                        <th>Outlook</th>
+                        <th>최종평가</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td rowspan="5">한국신용정보</td>
+                          <td>BBB+</td>
+                          <td>A3+</td>
+                          <td>Stable</td>
+                          <td>2020년 3월</td>
+                      </tr>
+                      <tr>
+                          <td>A-</td>
+                          <td>A2-</td>
+                          <td>Stable</td>
+                          <td>2019년 7월</td>
+                      </tr>
+                      <tr>
+                          <td>A</td>
+                          <td>A2</td>
+                          <td>Stable</td>
+                          <td>2018년 5월</td>
+                      </tr>
+                      <tr>
+                          <td>A0</td>
+                          <td>A2</td>
+                          <td>Stable</td>
+                          <td>2017년 6월</td>
+                      </tr>
+                      <tr>
+                          <td>A0</td>
+                          <td>A2</td>
+                          <td>Negative</td>
+                          <td>2016년 9월</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="contlist">
+                <div class="table1">
+                  <h3>회사채</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                          <td colspan="2">회사채 신용등급은 원리금 지급 능력의 정도에 따라 AAA부터 D까지 10개 등급으로 분류됩니다.<br>
+                            등급 중 AAA부터 BBB까지는 원리금 상환능력이 인정되는 투자등급이며, BB에서 C까지는 환경변화에 따라 크게 영향을 받는 투기등급으로 분류됩니다.</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td>AAA</td>
+                          <td>원리금 지급능력이 최상급임</td>
+                      </tr>
+                      <tr>
+                          <td>AA</td>
+                          <td>원리금지급능력이 매우 우수하지만 AAA의 채권보다는 다소 열위임</td>
+                      </tr>
+                      <tr>
+                          <td>A</td>
+                          <td>원리금 지급능력은 우수하지만 상위등급보다 경제여건 및 환경악화에 따른 영향을 받기 쉬운 면이 있음</td>
+                      </tr>
+                      <tr>
+                          <td>BBB</td>
+                          <td>원리금 지급능력은 양호하지만 상위등급에 비해서 경제여건 및 환경악화에 따라 장래 원리금의 지급능력이 저하될 가능성을 내포하고 있음</td>
+                      </tr>
+                      <tr>
+                          <td>BB</td>
+                          <td>원리금 지급능력이 당장은 문제가 되지 않으나 장래 안전에 대해서는 단언할 수 없는 투기적인 요소를 내포하고 있음</td>
+                      </tr>
+                      <tr>
+                          <td>B</td>
+                          <td>원리금 지급능력이 결핍되어 투기적이며 불황시에 이자지급이 확실하지 않음</td>
+                      </tr>
+                      <tr>
+                          <td>CCC</td>
+                          <td>원리금 자급에 관하여 현재에도 불안요소가 있으며 채무불이행의 위험이 커 매우 투기적임</td>
+                      </tr>
+                      <tr>
+                          <td>CC</td>
+                          <td>상위등급에 비하여 불안요소가 더욱 큼</td>
+                      </tr>
+                      <tr>
+                          <td>C</td>
+                          <td>채무불이행의 위험성이 높고 원리금 상환능력이 없음</td>
+                      </tr>
+                      <tr>
+                          <td>D</td>
+                          <td>상환불능 상태임</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <span>- 상기 등급 중 A2부터 B등급까지는 +, - 부호를 부가하여 동일 등급내에서 우열을 나타내고 있습니다.</span>
+                </div>
+
+                <div class="table1">
+                  <h3>기업어음</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                          <td colspan="2">기업어음 신용등급은 신용도에 따라 A1에서 D까지 6개의 등급으로 구성되어 있습니다.<br>
+                            등급 중 A1에서 A3까지는 적기 상환능력이 인정되는 투자등급이며, B와 C는 환경변화에 따라 적기 상환능력이 크게 영향 받을 수 있는 투기등급으로 분류됩니다.</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td>A1</td>
+                          <td>적기 상환능력이 최상이며 상환능력의 안정성 또한 최상임</td>
+                      </tr>
+                      <tr>
+                          <td>A2</td>
+                          <td>적기 상환능력이 우수하나 그 안정성이 A1에 비해 다소 열위임</td>
+                      </tr>
+                      <tr>
+                          <td>A3</td>
+                          <td>적기 상환능력이 양호하며 그 안정성도 양호하나 A2에 비해 열위임</td>
+                      </tr>
+                      <tr>
+                          <td>B</td>
+                          <td>적기 상환능력은 적정 시 되나 단기적 여건변화에 따라 그 안정성에 투기적인 요소가 내포되어 있음</td>
+                      </tr>
+                      <tr>
+                          <td>C</td>
+                          <td>적기 상환능력 및 안정성에 투기적인 요소가 큼</td>
+                      </tr>
+                      <tr>
+                          <td>D</td>
+                          <td>상환불능 상태임</td>
+                      </tr>
+                    </tbody>
+                    
+                  </table>
+                  <span>- 상기 등급 중 A2부터 B등급까지는 +, - 부호를 부가하여 동일 등급내에서 우열을 나타내고 있습니다.</span>
+                </div>
+
+              </div>
+            </div>
+                
+            </section>
+
+
+          </div>
+
+          <? include "../common/sub_footer.html" ?>
+          <script src="./js/tabs.js"></script>
+          
+</body>
+</html>

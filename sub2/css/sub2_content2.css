@@ -1,0 +1,13 @@
+/* 사업분야 본문영역 */
+.contentArea .mainimage > img{
+    width: 1200px;
+    height: 600px;
+    margin: 15px 0;
+}
+.contentArea > p{
+    font-size: 1em;
+    text-align: justify
+}
+.tabs ul.tab_menu{
+    padding-left: 120px 
+}

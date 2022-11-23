@@ -1,0 +1,118 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용-직무소개</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content2.css">
+
+    <script src="https://kit.fontawesome.com/96a1703d7f.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+          <? include "../common/sub_header.html" ?>
+          <div class="visual">
+            <img src="./common/images/topbg.jpg" alt="상단이미지">
+            <h3>인재채용</h3>
+          </div>
+
+          <div class="subNav">
+            <ul>
+                <li><a href="./sub6_1.html">인사제도</a></li>
+                <li><a class="current" href="./sub6_2.html">채용절차</a></li>
+                <li><a href="./sub6_3.html">채용가이드</a></li>
+            </ul>
+          </div>
+
+          <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt;<span> 인재채용 </span>&gt;      <strong> 인사제도 </strong>
+                </div>
+                
+                <h2>채용절차</h2>
+                <p class="subtext">현대로템의  <span>채용절차</span>는 아래와 같습니다.</p>
+                
+            </div>
+            <div class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+                  <div class="susContent">
+                    <p>
+                      전형절차는 모집시기에 따라 일부 변동될 수 있으니, 반드시 해당 채용공고를 확인하시기 바랍니다.
+                    </p>
+                  </div>
+
+                  <div class="recruit">
+                    <dl>
+                        <dt>서류심사</dt>
+                        <dd>
+                          <i class="fa-regular fa-file-lines"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>인성검사</dt>
+                        <dd>
+                          <i class="fa-solid fa-person-circle-question"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>면접</dt>
+                        <dd>
+                          <i class="fa-solid fa-people-group"></i>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>건강검진</dt>
+                        <dd>
+                          <i class="fa-solid fa-stethoscope"></i>
+                        </dd>
+                    </dl>
+                    </div>
+                  <div class="content">
+                    <dl>
+                      <dt>서류전형</dt>
+                      <dd>제출하신 지원서를 바탕으로 지원 직무와의 연관성을 면밀히 검토하고, 현대로템의 인재상 및 핵심가치와의 정합성을 평가합니다. 서류전형은 입사 후 발휘하게 될 잠재력을 파악하는 과정으로 모든 지원서는 필수적으로 현업부서의 검토를 거치며 공정하게 평가됩니다.</dd>
+                    </dl>
+                    <dl>
+                      <dt>인성검사</dt>
+                      <dd>지원자들의 편의성을 고려해 인성검사는 모두 온라인으로 진행되며, 장소와 시간에 상관없이 정해진 일정 내 응시 하시기만 하면 됩니다. 현대로템에서 진행하고 있는 인성검사는 다양한 성격문항들을 통해 회사와 직무에 보다 적합한 개인의 성향을 파악하기 위해 개발된 검사입니다.</dd>
+                    </dl>
+                    <dl>
+                      <dt>1차 인터뷰</dt>
+                      <dd>1차 인터뷰는 실무 담당자 및 현업 부서장이 인터뷰어로 참석하며, 지원서를 바탕으로 직무 연관성 및 잠재 역량, 보유 스킬 및 가치관 등을 확인합니다.
+                        (상황에 따라 온라인 인터뷰 대체 가능)</dd>
+                    </dl>
+                    <dl>
+                      <dt>2차 인터뷰</dt>
+                      <dd>1차 인터뷰 합격자를 대상으로 임원진과의 심층 인터뷰를 통해 현대로템에 적합한 인재 여부를 최종적으로 확인합니다.
+                        (상황에 따라 온라인 인터뷰 대체 가능)</dd>
+                    </dl>
+                    <dl>
+                      <dt>최종합격</dt>
+                      <dd>채용 건강검진 후, 당사 채용 기준에 따라 지원자의 경력사항, 전문성, 평가결과 등을 종합적으로 고려해 처우를 결정합니다.
+                      </dd>
+                    </dl>
+                  </div>
+            </div>
+
+
+          </article>
+
+          <? include "../common/sub_footer.html" ?>
+          
+</body>
+</html>

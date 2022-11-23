@@ -1,0 +1,128 @@
+/* 기업개요 본문영역 */
+#footerArea{
+    overflow: hidden;
+}
+.main img{
+    width: 2000px; 
+    height: 500px; 
+}
+.main h3{
+    margin-left: -110px;
+}
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#content .titleArea .subtext:first-of-type{
+    font-size: 2em;
+    color: #333; 
+    font-weight: 400;   
+}
+#content .titleArea span:last-child{
+    font-size: 2.5rem;
+    color: #0a2369; 
+    font-weight: 500;   
+}
+.susContent .principle{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-left: 460px;
+    color: #666;
+    line-height: 300px;
+    font-size: 1.4em;
+    font-weight: 500;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow:  5px 5px 10px #666666,
+                -5px -5px 10px #ffffff;
+    transition: all .5s;
+}
+.susContent .principle:hover{
+    color: #333;
+    box-shadow:  50px 50px 100px #666666,
+                -50px -50px 100px #ffffff;
+}
+.susContent p{
+    margin: 150px 0;
+    text-align: center;
+}
+.susContent p span:first-child{
+    color: #0a2369;
+    font-size: 2em;
+}
+.susContent p span:last-child{
+    color: #333;
+    font-size: 2.5em;
+}
+.susContent ul li{
+    width: 300px;
+    height: 600px;
+    background: #eee;
+    float: left;
+    border-radius: 60px;
+    margin-left: 75px;
+    line-height: 210px;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: all 0.5s;
+}
+.susContent ul li:first-child{
+    background: url(../images/content1/planet.jpeg) no-repeat;
+    background-position: -150px 0;
+}
+.susContent ul li:nth-child(2){
+    background: url(../images/content1/people.jpeg) no-repeat;
+    background-position: -1050px -600px;
+}
+.susContent ul li:last-child{
+    background: url(../images/content1/prosperity.jpeg)no-repeat;
+    background-position: -300px -300px;
+}
+.susContent ul li:hover {
+    color: #fff;
+    font-size: 2em;
+    transform: scale(1.1);
+}
+.susContent ol{
+    float: left;
+    margin-bottom: 200px;
+}
+.susContent ol li{
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    display: inline-block;
+    background: #005793;
+    margin: 200px 0 100px 40px;
+    position: relative;
+    transition: all .5s;
+}
+.susContent ol li p{
+    position: absolute;
+    top: -30px;
+    left: 70px;
+    font-size: 2.5em;
+    color: #fff;
+}
+.susContent ol li p:last-child{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    color: #333;
+    font-size: 1.2em;
+    text-align: center;
+    padding-left: 35px;
+}
+.susContent ol li:hover{
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+}
+.susContent ol li:hover p{
+    color: #005793;
+}

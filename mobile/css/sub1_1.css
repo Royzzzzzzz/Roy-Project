@@ -1,0 +1,27 @@
+#wrap #headerArea .menu_open span{
+    color: #333;
+}
+#wrap #headerArea .menu_open span::before{
+    color: #333;
+}
+#wrap #headerArea .menu_open span::after{
+    color: #333;
+}
+
+.content_area2 {
+    margin: 0 4.5%;
+}
+#content .content_area2 img {
+    max-width: 100%;
+}
+.content_area2 h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.065rem;
+    color: #005793;
+    margin: 1.75rem 0 0.75rem;
+}
+.content_area2 p{
+    text-align: justify;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,155 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 -*/
+#content .content_toptopic{font-family: 'Noto Sans KR', sans-serif; text-align: center; margin-top: 40px;}
+#content .content_toptopic h3{font-weight: 700; font-size: 2.25em; color: #333; margin-bottom: 16px;}
+
+/* 폼 공통영역 */
+.row{margin-bottom: 24px;}
+.row label{display: block; font-weight: 500; font-size: 1.125em; margin: 0 0 12px 4px;}
+input, textarea, select{width: 100%; height: 56px; border: 1px solid #ececec; border-radius: 4px; background: rgba(255, 255, 255, .5); padding: 12px 16px 13px 16px; box-sizing: border-box; font-size: 1.125em; font-weight: 500;}
+textarea{ resize: vertical;}
+input:focus, select:focus, textarea:focus{outline-color: rgba(25, 121, 189, .5);}
+input::placeholder, textarea::placeholder, select::selection{color: #C1C1C1; font-weight: 300; font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+.disabled_input{background-color: #f8f8f8;}
+    /* Change the color to your own background color */
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active {transition: background-color 5000s ease-in-out 0s;}
+    /* select */
+select {background:url(../concert/data/arrow.png) no-repeat 90% 50%; -webkit-appearance: none;-moz-appearance: none;appearance : none;font-family: inherit; color: #333; font-size: 1.125em; font-weight: 400; background-size: 20%;}
+select::-ms-expand {display: none;}
+
+/* 버튼 커스텀(btn_wrap, btn_double) */
+.btn_wrap{overflow: hidden; text-align: center; }
+.btn_wrap .btn{display: block; width: -webkit-fill-available; padding: 15px 64px 16px; border-radius: 4px; border: 1px solid #0a2369; box-sizing: border-box; cursor:pointer;
+    font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 1em; text-align: center; overflow: hidden; position: relative;}
+.btn_wrap .btn::before{content: ''; display: block; width: 100%; height: 100%; border-radius: 100%; background:rgba(255,255,255,.15); position: absolute; left: 0; bottom: 0; transition: all .2s; transform: translate(0px, 160%) scale(1.2, 2);}
+.btn_wrap div:hover .btn::before, .btn_wrap li:hover .btn::before{transform: translate(0,0%) scale(1.2,2);}
+.btn_wrap .btn.btn_nomal{background: #fff; color: #0a2369;}
+.btn_wrap .btn.btn_solid{background: #0a2369; color: #fff;}
+.btn_double>div, .btn_double>li{float: left;}
+.btn_double>div:first-child .btn, .btn_double>li:first-child .btn{margin-right: 4px;}
+.right_btn{margin: 0 0 0 auto; width: fit-content;}
+.center_btn{margin: 0 auto; width: fit-content;} 
+
+/* 검색 */
+.search_wrap{padding: 32px 0; border-radius: 4px; margin-bottom: 72px; margin-top: 40px; box-shadow: 0px 4px 13px 0px rgb(82 63 105 / 5%); border: 1px solid #f8f8f8;}
+.search_form{overflow: hidden; position: relative; left: 50%; margin-left: -418px;}
+.search_form>div{float: left;}
+.search_wrap .search_cat{margin-right: 4px; width: 160px;}
+.search_wrap .query{width: 420px;}
+.search_wrap .query input{background: url(../concert/data/search.png)no-repeat 16px center; padding-left: 56px; background-size: 5%;}
+.search_wrap .btn_wrap{margin-left: 8px;}
+.search_wrap .btn_wrap .btn{padding: 15px 40px 16px;}
+
+/* list_wrap2 */
+.list_body{overflow: hidden; margin-top: 12px;}
+.list_body .item_wrap{float: left; width: 380px; margin: 0 24px 24px 2px; border: 2px solid #f8f8f8;border-radius: 4px; box-sizing: border-box; transition: all .3s; box-shadow: 0px 0px 3px 0;}
+.list_body .item_wrap:nth-child(3n){margin-right: 0;}
+.list_body .item_wrap .list_item2{padding-left: 0; height: 250px; overflow: hidden; border-radius: 4px 4px 0 0; position: relative;}
+.list_body .item_wrap .list_item2 img{position: absolute; vertical-align: middle; transition: all .3s; width: 100%; height: 100%;}
+.list_body .item_wrap:hover .list_item2 img{transform: scale(1.03);}
+.list_body .item_wrap .bottom_item{margin: 18px 24px 24px;}
+.list_body .item_wrap .list_item3{font-weight: 700; font-size: 1.25em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.list_body .item_wrap .list_item4{height: 51.2px; color: #333; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 8px; margin-bottom: 20px;}
+.bottom_item .bottom_sub{overflow: hidden; text-align: left; color: #666; font-family: 'Roboto', sans-serif;}
+.bottom_item .bottom_sub div{float: left; font-size: 1em;}
+.bottom_item .bottom_sub .list_item6::before, .bottom_item .bottom_sub .list_item6::after{content: ''; display: inline-block; width: 1px; height: 10px; background: #D1D6DB; margin: 0 12px; position: relative; top: 50%; margin-top: -2px;}
+.bottom_item .bottom_sub .list_item8{float: right; color: #1979bd;}
+
+/* tb_top */
+.tb_top{overflow: hidden;}
+.tb_top p{float: left; font-size: 1.125em; color: #666; position: relative; top: 50%; margin-top: 9px;}
+.tb_top p span{font-weight: 700; font-size: 1.25em; color: #0a2369;}
+
+/* scale */
+.scale{width: 140px; float: right; font-size: 16px;}
+
+/* table */
+table{width: 100%; margin-top: 12px; text-align: center;}
+thead{height: 70px; background-color: #f8f8f8; font-size: 1.125em; color: #333; border-top: 2px solid #ececec; border-bottom: 2px solid #ececec;}
+thead th{font-weight: 400;}
+tbody{height: 80px; border-top: 2px solid #f8f8f8; border-bottom: 2px solid #f8f8f8; font-size: 1.125em; color: #666;}
+tbody tr:hover{background: rgba(25, 121, 189, .1);}
+.list_item2{color: #333;}
+tbody tr:hover .list_item2{text-decoration: underline;}
+#list_title2, .list_item2{text-align: left; padding-left: 32px;}
+
+/* page_button */
+#page_button{margin-top: 18px; margin-bottom: 120px; text-align: right; position: relative;}
+#page_num a{display: inline-block; width: 40px; height: 40px; font-size: 1.125em; color: #0a2369; margin: 0 4px;}
+#page_num b{display: inline-block; width: 40px; height: 40px; font-size: 1.125em; color: #fff; position: relative; margin: 0 4px;}
+#page_num b::before{content: ''; display: block; width: 40px; height: 40px; background: #0a2369; border-radius: 50px; position: absolute; left: 50%; top: 50%; margin: -25px 0 0 -20px; z-index: -10;}
+#page_num i{color: #999; margin: 0 16px; font-size: 1.5rem;}
+#page_num{padding-top: 16px; text-align: center;}
+#page_button .btn_write{left: 0; margin-left: 0; margin-top: 0; display: inline-block;}
+
+/* board_form */
+.board_form{padding: 72px 5% 0; border: 1px solid #f8f8f8; border-radius: 4px; box-shadow: 0px 4px 13px 0px rgb(82 63 105 / 5%); margin: 56px 0 120px;}
+.row textarea#text_content{height: 180px; width: 1080px;}
+.board_form #page_button{margin-top: 56px; margin-bottom: 56px; border-top: 1px solid #ecec; padding-top: 56px;}
+.board_form #page_button .btn_wrap2{margin-top: 0;}
+
+/* view_form */
+.view_form{padding: 56px 5% 0; border: 1px solid #f8f8f8; border-radius: 4px; box-shadow: 0px 4px 13px 0px rgb(82 63 105 / 5%); margin: 56px 0 120px;}
+.view_title{padding-bottom: 24px; border-bottom: 1px solid #ececec;}
+#view_title1{text-align: center; font-weight: 700; font-size: 1.5em; margin-bottom: 16px;}
+#view_title2{overflow: hidden; text-align: center; color: #666;}
+#view_title2 ul{margin: 0 auto; width: fit-content;}
+#view_title2 ul li{float: left; font-size: 1.125em;}
+#view_title2 ul li:nth-child(2)::before, #view_title2 ul li:nth-child(2)::after{content: ''; display: inline-block; width: 1px; height: 10px; background: #D1D6DB; margin: 2px 12px; position: relative; top: 50%; margin-top: -2px;}
+#view_title3 .btn_wrap{margin-top: 32px;}
+#view_content{margin: 40px 0; font-size: 1.125em;}
+.view_form .btn_wrap{margin-top: 0;}
+.view_form .view_gbtn{margin-top: 0; padding: 56px 0; border-top: 1px solid #ececec;}
+.delete_ok i{color: #1979bd; margin-right: 4px; font-size: 1.25em; margin-left: 16px; margin-top: 16px;}
+.view_form .view_gbtn{margin-top: 0; padding: 56px 0; border-top: 1px solid #ececec;}
+#view_content{text-align: center;}
+
+/* 체크박스 ui변경 */
+input[type=checkbox] + label::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 50%;
+    content: '';
+    background: url(../images/delete_1.png) center center no-repeat;
+    margin: 0px 4px -6px 0px;
+    transition: all .3s;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + label {
+    cursor: pointer;
+    color: #D82723;
+    display: inline-block;
+}
+input[type=checkbox]:checked + label::before {
+    background: url(../images/delete_2.png) center center no-repeat;
+}
+input[type=checkbox]:checked + label{
+    color: #1979bd;
+}
+
+/* 파일 업로드 버튼 커스텀 */
+.btn_fileup{display: inline-block; background: #1979bd; color: #fff; padding: 0 16px; line-height: 35px; cursor: pointer;}
+
+/* 댓글폼 */
+.reply_form{border-radius: 8px; overflow: hidden; margin-bottom: 24px;}
+.reply_wrap{position: relative; padding: 24px 30px 24px 79.66px; background: #f8f8f8;}
+.reply_form>div .reply_wrap:first-child{padding-top: 73px}
+.reply_form>div .reply_wrap:first-child::after{content: '댓글'; display: block; margin-top: 24px; font-size: 20px; font-weight: 700; position: absolute; top: 0; left: 34px;}
+.reply_wrap::before{content: ''; display: block; width: 1030px; height: 1px; background: #ececec; position: absolute; bottom: 0; left: 50%; margin-left: -515px;}
+.reply_form>div .reply_wrap:last-child::before{content: none;}
+.reply_wrap .usericon{position: absolute; top: 20px; left: 32px; font-size: 2.3em; color: rgba(25, 121, 189, .5);}
+.reply_form>div .reply_wrap:first-child .usericon{top: 73px;}
+.reply_infobox{overflow: hidden;}
+.reply_infobox li:first-child{float: left; font-weight: 700; font-size: 1.125em;}
+.reply_infobox li:first-child span{display: inline-block; font-size: 0.889em; font-weight: 400; color: #999; margin-left: 8px;}
+.reply_infobox li:last-child{float: right;}
+.reply_infobox li:last-child a{color: #999; transition: all .5s;}
+.reply_infobox li:last-child:hover a{color: #D82723;}
+.reply_content{font-size: 1.125em; line-height: 1.5em; margin-top: 4px;}
+.writer_content{padding: 20px 32px 16px 32px; background: #f8f8f8; position: relative;}
+#ripple_content{height: 120px; min-height: 84px;}
+.reply_form .btn.btn_solid{width: auto; background: #0a2369; color: #fff; transition: all .5s; border: none; position: absolute; bottom: 36px; right: 46px; padding: 15px 24px 16px;}
+.reply_form .btn:hover{background: #ccc; color: #0a2369;}

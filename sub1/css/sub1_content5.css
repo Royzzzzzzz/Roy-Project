@@ -1,0 +1,75 @@
+/* 기업개요 본문영역 */
+.tabNav{
+    overflow: hidden;
+    width: 1200px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 1.625em;
+}
+.tabNav li{
+    float: left;
+    width: 33.3333%;
+}
+.tabNav li a{
+    display: block;
+    padding-top: 15px;
+    margin-right: 10px;
+    height: 80px;
+    box-sizing: border-box;
+    border: 1px solid #0a2369;
+    transition: all .3s;
+}
+.tabNav .tabCurrent{
+    background: #fff;
+    color: #0a2369;
+}
+.tabNav li a:hover{
+    background: #fff;
+    color: #0a2369;
+    font-size: 1.2em;
+}
+.map{
+    width: 1200px;
+}
+.map h3{
+    font-size: 2.5em;
+}
+.map > div{
+    width: 1200px;
+    height: 600px;
+    border: 1px solid #666;
+}
+.map dl{
+    overflow: hidden;
+    margin: 50px 0;
+    border-bottom: 1px solid #666;
+    padding-bottom: 50px;
+}
+.map dl:last-child{
+    border-bottom: none;
+}
+.map dt{
+    float: left;
+    font-size: 40px;
+}
+.map dt i{
+    color: #999;
+}
+.map dt> span{
+    margin-top: 10px;
+    font-size: 0.5em;
+    color: #666;
+}
+.map dd{
+    float: right;
+    width: 700px;
+    line-height: 40px;
+}
+.map dd p{
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.map dd span{
+    font-size: 1.5em;
+    font-weight: 700;
+}

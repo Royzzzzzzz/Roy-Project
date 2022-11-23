@@ -1,0 +1,11 @@
+body .sub_menu li{
+    float: left;
+    width: 50%;
+}
+.swiper-container {
+    width: 80%;
+    height: 50%;
+}
+.swiper-wrapper img{
+    width: 100%;
+}

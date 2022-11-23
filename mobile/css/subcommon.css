@@ -1,0 +1,52 @@
+/* 비쥬얼영역 공통 */
+.visual{
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+.visual img{
+    width: 100%;
+    height: 200px;
+}
+.visual .visual_text {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    color: #fff;
+    text-align: center;
+}
+.visual .visual_text h3{
+    font-size: 1.75rem;
+    margin-bottom: 0.6rem;
+}
+/*비주얼 영역 공통*/
+.sub_menu li{
+    float: left;
+    width: 33.33%;
+}
+/*2depth 메뉴*/
+.sub_menu{margin: 0 20px; position: relative; top: -40px;}
+.sub_menu ul{overflow: hidden; width: 100%; box-shadow: 0 2.5px 5px 0 rgb(0 0 0 / 40%); text-align: center;}
+.sub_menu li{float: left;}
+.sub_menu li a{display: block; font-size: 1.071rem; padding: 12px 0; background: #fff; border: 1px solid #f8f8f8; color: #666; transition: all .5s;}
+.sub_menu li.current a{background: #1979bd; color: #fff; font-weight: 500; border: 1px solid #1979bd;}
+
+/*컨텐츠 h2*/
+#content{text-align: center;}
+#content h2{font-weight: 700; font-size: 2rem; margin: 26.2px 0 0; position: relative;}
+#content h2::before{content: ''; display: block; width: 1px; height: 20px; background: #999; position: absolute; top: 55px; left: 50%; margin-left: -0.5px;}
+
+/*컨텐츠 공통 부분(h3, p)*/
+#content>div{padding-top: 50px;}
+#content>div>h3{font-weight: 700; font-size: 1.714rem; color: #333; margin-bottom: 20px;}
+#content>div>p{font-size: 1.143rem; color: #666; line-height: 1.75em;}
+#content>div>p>span{color: #1979bd;}
+
+/* 글자 색상 */
+.blue{
+    color: #1979bd;
+}
+.red{
+    color: #ff0d1e;
+}

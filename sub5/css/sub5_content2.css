@@ -1,0 +1,105 @@
+.subtext span{
+    color: #0a2369;
+    font-weight: 500;
+}
+.contentArea .target h4{
+    margin: 150px 0 50px 0;
+    text-align: center;
+    font-size: 1.75em;
+}
+.contentArea .target > div{
+    background: #eee;
+    width: 1200px;
+    height: 500px;
+}
+.contentArea .target  p{
+    padding: 70px 40px;
+    text-align: justify;
+    font-size: 1.125em;
+    line-height: 2em;
+    font-weight: 500;
+}
+.contentArea .rule h4{
+    margin: 150px 0 50px 0;
+    text-align: center;
+    font-size: 1.75em;
+}
+.contentArea .rule ul{
+    margin: 0 auto;
+}
+.contentArea .rule{
+    text-align: center;
+    white-space: nowrap;
+}
+.contentArea .rule p{
+    font-size: 1.25em;
+    margin-bottom: 50px;
+    font-weight: 500;
+    color: #0a2369;
+}
+.contentArea .rule li{
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    margin: 50px 80px 80px 0;
+    font-size: 1.5em;
+}
+.contentArea .rule li::before {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 160px;
+    background: #fff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1);
+    border-radius: 50px;
+    margin: 0 0 20px;
+  }
+  .contentArea .rule li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+
+
+.contentArea .rule li::after {
+    font-family: "fontawesome";/*폰트 어썸 fab 글꼴 연결*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.5em;
+    padding-top: 40px;
+    color: #0a2369;
+}
+.contentArea .rule li:nth-child(1)::after {
+    content:'\f007';  /*유니코드 붙여넣기*/
+    font-family: "fontawesome";/*폰트 어썸 fab 글꼴 연결*/
+    font-style: normal;
+    font-weight: 600;
+}
+.contentArea .rule li:nth-child(2)::after {
+    content:'\f24e';  /*유니코드 붙여넣기*/
+    font-family: "fontawesome";/*폰트 어썸 fab 글꼴 연결*/
+    font-style: normal;
+    font-weight: 600;
+}
+.contentArea .rule li:nth-child(3)::after {
+    content:'\f132';  /*유니코드 붙여넣기*/
+    font-family: "fontawesome";/*폰트 어썸 fab 글꼴 연결*/
+    font-style: normal;
+    font-weight: 600;
+}
+.contentArea .rule li:nth-child(4)::after {
+    content:'\f6ff';  /*유니코드 붙여넣기*/
+    font-family: "fontawesome";/*폰트 어썸 fab 글꼴 연결*/
+    font-style: normal;
+    font-weight: 600;
+}
+.contentArea .rule li:nth-child(5)::after {
+    content:'\f3c5';  /*유니코드 붙여넣기*/
+    font-family: "fontawesome";/*폰트 어썸 fab 글꼴 연결*/
+    font-style: normal;
+    font-weight: 600;
+}

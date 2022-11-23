@@ -1,0 +1,184 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지속가능경영-환경경영</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content3.css">
+    
+    <script src="./js/Nwagon.js"></script>
+    <script src="https://kit.fontawesome.com/96a1703d7f.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    
+</head>
+<body>
+
+          <? include "../common/sub_header.html" ?>
+          <div class="visual">
+            <img src="./common/images/topbg.jpg" alt="상단이미지">
+            <h3>지속가능경영</h3>
+          </div>
+
+          <div class="subNav">
+            <ul>
+                <li>
+                    <a href="./sub5_1.html">지속가능경영</a>
+                </li>
+                <li>
+                    <a href="./sub5_2.html">윤리경영</a>
+                </li>
+                <li>
+                    <a class="current" href="./sub5_3.html">환경경영</a>
+                </li>
+                <li><a href="./sub5_4.html">사회공헌</a></li>
+            </ul>
+          </div>
+
+          <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt;<span> 지속가능경영 </span>&gt;      <strong> 지향점 </strong>
+                </div>
+                <h2>환경경영</h2>
+                <p class="subtext">창의적 혁신으로 탄소중립과 오염물질 배출 감소 등<br> 지구를 위한 현대로템의 노력은 계속됩니다.</p>
+            </div>
+            <div class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+                <section class="roadMap">
+                    <h2>중장기 로드맵</h2>
+                    <div>
+                      <p>Green Acceleration</p>
+                      <p>미래세대와 지구를 위한 친환경 전환</p>
+                    </div>
+                    <div class="order">
+                    <dl>
+                        <dt>2020</dt>
+                        <dd>
+                          에너지관리시스템<br>
+                          (GMEMS) 고도화 완료
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>2030</dt>
+                        <dd>
+                          폐기물 매립 Zero<br>  
+                          100% 달성
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>2040</dt>
+                        <dd>
+                          RE100<br>
+                          달성
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>2045</dt>
+                        <dd>
+                          탄소중립<br>
+                          달성
+                        </dd>
+                    </dl>
+                    </div>
+                  </section>
+                  <section class="enviro02">
+                    <h2>탄소중립</h2>
+                    <div class="carbon">
+                        <p>Green Transformation to 2045 Net-Zero</p>
+                        <p>2040년 사업장 탄소중립 달성, 2045년 공급망까지 탄소중립 완료</p>
+                        <p>현대로템은 지속가능 탄소중립 생태계 조성을 선도하는 글로벌 부품사로 도약하기 위해</p>
+                        <p>‘사업장 → 공급망·제품 밸류체인 → 지역사회’로 확장하는 4대 추진전략을 이행하고자 합니다.</p>
+                    </div>
+                    <div class="secCon">
+                        <h3>4대 추진전략</h3>
+                        <div class="strategy">
+                            
+                            <div>
+                                <p>Green Plant</p><br>
+                                <p>
+                                    에너지 전환 및 효율화로<br>
+                                    <span>사업장</span> 감축 가속화
+                                </p>
+                            </div>
+                            <div>
+                                <p>Green Supply</p><br>
+                                <p>
+                                    Scope 3 감축을 위한<br>
+                                    체계적 <span>공급망</span> 관리
+                                </p>
+                            </div>
+                            <div>
+                                <p>Green Product</p><br>
+                                <p>
+                                    산업 패러다임 변화에 따른<br>
+                                    탄소저감 <span>제품</span> 확대
+                                </p>
+                            </div>
+                            <div>
+                                <p>Green Partnership</p><br>
+                                <p>
+                                    그린 생태계 조성을 위한<br>
+                                    지속가능 <span>파트너십</span> 운영
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2>2045 탄소중립 로드맵</h2>	
+	                  <div id="chart17"></div>
+                   <script> 
+                      var options = {
+                        'legend':{
+                          names: ['2019', '2030', '2040', '2045'],
+                          hrefs: []
+                            },
+                        'dataset':{
+                          title:'Playing time per day', 
+                          values: [[10,30,60], [5,20,50], [0,0,20], [0,0,0]],
+                          colorset: ['#DC143C','#FF8C00', '#2EB400'],
+                          fields:['사업장 전력 외', '사업장 전력', '공급망,출장 등']
+                          },
+                        'chartDiv' : 'chart17',
+                        'chartType' : 'stacked_column',
+                        'chartSize' : {width:1200, height:600},
+                        'maxValue' : 100,
+                        'increment' : 10
+                      };
+        
+                Nwagon.chart(options);
+                  </script> 
+                  
+
+                  </section>
+            </div>
+            
+
+            
+	
+
+          </article>
+
+
+          
+
+          <? include "../common/sub_footer.html" ?>
+          <!-- <script src="./js/chart.js"></script> -->
+          <script src="./js/jquery-1.12.4.min.js"></script>
+          <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+
+          
+</body>
+</html>

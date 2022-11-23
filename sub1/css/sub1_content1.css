@@ -1,0 +1,167 @@
+/* 기업개요 본문영역 */
+@keyframes left{
+    from{transform:translateX(-50px); opacity:0;}
+    to{transform:translateX(0); opacity:1;}
+  }
+  
+  @keyframes right{
+    from{transform:translateX(50px); opacity:0;}
+    to{transform:translateX(0); opacity:1;}
+  }
+  
+  @keyframes up{
+    from{transform:translateY(50px); opacity:0;}
+    to{transform:translateX(0); opacity:1;}
+  }
+  /* active */
+  /*.about > li.active h3{animation:right 1 .5s ease-out; animation-fill-mode: forwards;}*/
+  .about > li.active img{
+    opacity: 0;
+  }
+  .about > li.active img{animation:left 1 .5s ease-out; animation-fill-mode: forwards;}
+  .about > li.active:nth-child(even) img{opacity: 0;}
+  .about > li.active:nth-child(even) img{animation-name:right; animation-delay: .3s;}
+  .about > li.active h3,
+  .about > li.active dt,.about > li.active dd{
+    opacity: 0;
+  }
+  .about > li.active h3,
+  .about > li.active dt,.about > li.active dd{animation:right 1 .5s ease-out; animation-delay: .3s; animation-fill-mode: forwards;}
+  .about > li.active:nth-child(even) dt,.about > li.active:nth-child(even) dd{
+    opacity: 0;
+  }
+  .about > li.active:nth-child(even) dt,.about > li.active:nth-child(even) dd{ animation-name:left; animation-delay: .3s;}
+
+#content{
+    height: 3600px;
+}
+#content .contentArea ul{
+    padding: 80px 0 0 40px;
+}
+#content .contentArea .introduction ul{
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+#content .contentArea .introduction ul li{
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+#content .contentArea .introduction ul img{
+    float: left;
+    width: 550px;
+    height: 350px;
+    z-index: -1;  
+}
+#content .contentArea .introduction ul dl{
+    float: left;
+    width: 530px;
+    height: 230px;
+    padding: 80px 0 40px 20px;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+#content .contentArea .introduction dl dt {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+#content .contentArea .introduction dl dd {
+    width: 500px;
+    font-size: 1.125em;
+    font-weight: 400;
+    margin-bottom: 60px;
+    color: #666;
+    text-align: justify;
+}
+#content .management h3{
+    font-size: 2.5em;
+    text-align: center;
+}
+#content .management p{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.250em;
+}
+#content .management p .blue{
+    color: #01a2fe;
+}
+#content .management p .red{
+    color: #ff0d1e;
+}
+#content .management ul{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    height: 400px;
+    background: #f9f9f9;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+#content .management li{
+    display: inline-block;
+    margin: 30px 0 50px 115px;
+}
+
+#content .core{
+    text-align: center;
+    white-space: nowrap;
+}
+#content .core h3{
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#content .core p{
+    font-size: 1.125em;
+    margin-bottom: 50px;
+}
+#content .core li{
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    margin: 50px 80px 80px 0;
+    font-size: 1.250em;
+}
+#content .core li::before {
+    content: '';
+    display: block;
+    width: 160px;
+    height: 160px;
+    background: #fff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1);
+    border-radius: 50px;
+    margin: 0 0 20px;
+  }
+#content .core li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+
+
+#content .core li::after {
+  background: url(../images/content1/icon1.png) 50% 50% no-repeat;
+}
+#content .core li:nth-child(1)::after {
+  background-image: url(../images/content1/icon1.png);
+}
+#content .core li:nth-child(2)::after {
+  background-image: url(../images/content1/icon2.png);
+}
+#content .core li:nth-child(3)::after {
+  background-image: url(../images/content1/icon3.png);
+}
+#content .core li:nth-child(4)::after {
+  background-image: url(../images/content1/icon5.png);
+}
+#content .core li:nth-child(5)::after {
+    background-image: url(../images/content1/icon4.png);
+}

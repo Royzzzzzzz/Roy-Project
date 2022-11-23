@@ -1,0 +1,231 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-기업개요</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content1.css">
+
+    <script src="https://kit.fontawesome.com/96a1703d7f.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+          <? include "../common/sub_header.html" ?>
+          <div class="visual">
+            <img src="./common/images/topbg.jpg" alt="">
+            <h3>회사소개</h3>
+          </div>
+
+          <div class="subNav">
+            <ul>
+                <li><a class="current" href="./sub3_1.html">지배구조</a></li>
+                <li><a href="./sub3_2.html">재무정보</a></li>
+                <li><a href="./sub3_3.html">전자공고</a></li>
+                <li><a href="./sub3_4.html">공시자료</a></li>
+            </ul>
+          </div>
+
+          <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt;<span> 투자정보 </span>&gt;      <strong> 지배구조 </strong>
+                </div>
+                <h2>지배구조</h2>
+                <p class="subtext">“신뢰를 바탕으로 한 <span>정도경영을 실천</span>하겠습니다.”</p>
+            </div>
+            <section class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+                <div class="nameCard">
+                  <h3>사내이사</h3>
+                  <ul>
+                    <li>
+                      <span>이용배</span>
+                      <p>사장(상근)</p>
+                      <dl>
+                        <dt>담당업무</dt>
+                        <dd>대표이사</dd>
+                        <dt>선임일</dt>
+                        <dd>20.03</dd>
+                        <dt>임기</dt>
+                        <dd>3년</dd>
+                        <dt>주요경력</dt>
+                        <dd>(前)현대차증권 대표이사 사장</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <span>김두홍</span>
+                      <p>전무(상근)</p>
+                      <dl>
+                        <dt>담당업무</dt>
+                        <dd>재경본부장</dd>
+                        <dt>선임일</dt>
+                        <dd>22.03</dd>
+                        <dt>임기</dt>
+                        <dd>3년</dd>
+                        <dt>주요경력</dt>
+                        <dd>(前)현대다이모스 재경본부장</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <span>김정훈</span>
+                      <p>상무(상근)</p>
+                      <dl>
+                        <dt>담당업무</dt>
+                        <dd>철도사업본부장</dd>
+                        <dt>선임일</dt>
+                        <dd>21.03</dd>
+                        <dt>임기</dt>
+                        <dd>3년</dd>
+                        <dt>주요경력</dt>
+                        <dd>(前)현대로템 해외사업실장</dd>
+                      </dl>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nameCard">
+                  <h3>사외이사</h3>
+                  <ul>
+                    <li>
+                      <span>정태학</span>
+                      <p>사외이사(비상근)</p>
+                      <dl>
+                        <dt>담당업무</dt>
+                        <dd>감사위원회 위원장</dd>
+                        <dt>선임일</dt>
+                        <dd>20.03</dd>
+                        <dt>임기</dt>
+                        <dd>3년</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <span>여형구</span>
+                      <p>사외이사(비상근)</p>
+                      <dl>
+                        <dt>담당업무</dt>
+                        <dd>감사위원회 위원</dd>
+                        <dt>선임일</dt>
+                        <dd>22.03</dd>
+                        <dt>임기</dt>
+                        <dd>3년</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <span>전상경</span>
+                      <p>사외이사(비상근)</p>
+                      <dl>
+                        <dt>담당업무</dt>
+                        <dd>감사위원회 위원</dd>
+                        <dt>선임일</dt>
+                        <dd>22.03</dd>
+                        <dt>임기</dt>
+                        <dd>3년</dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <span>윤지원</span>
+                      <p>사외이사(비상근)</p>
+                      <dl>
+                        <dt>담당업무</dt>
+                        <dd>투명경영위원회 위원</dd>
+                        <dt>선임일</dt>
+                        <dd>22.03</dd>
+                        <dt>임기</dt>
+                        <dd>3년</dd>
+                      </dl>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table">
+                  <div class="background"><img src="./images/content2/background.jpg" alt=""></div>
+                  <h3>이사회내 위원회 설치현황</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th scope="col" rowspan="2" class="first">위원회 명칭</th>
+                        <th scope="col" colspan="2">구성원</th>
+                        <th scope="col" rowspan="2">주요기능</th>
+                        <th scope="col" rowspan="2">비고</th>
+                      </tr>
+                      <tr>
+                        <th scope="col">사내</th>
+                        <th scope="col">사외</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td>감사위원회</td>
+                      <td>-</td>
+                      <td>정태학, 여형구, 전상경</td>
+                      <td>
+                        <ul class="functionList">
+                          <li>회사회계 및 업무 감사</li>
+                          <li>이사에 대하여 영업에 관한 보고 요구</li>
+                          <li>회사업무 및 재산상태 조사</li>
+                          <li>외부감사인 선임 및 해임 승인 등</li>
+                        </ul>
+                      </td>
+                      <td>-</td>
+                    </tr> 
+                    <tr>
+                      <td>투명경영위원회</td>
+                      <td>-</td>
+                      <td>여형구, 정태학, 윤지원</td>
+                      <td>
+                        <ul class="functionList">
+                          <li>계열사간 내부거래 승인
+                            </li>
+                          <li>공정거래자율준수프로그램 이행점검 등</li>
+                        </ul>
+                      </td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>보수위원회</td>
+                      <td>이용배</td>
+                      <td>여형구, 전상경</td>
+                      <td>
+                        <ul class="functionList">
+                          <li>등기이사 보수한도, 보수체계에 관한 사항의 심의 및 의결
+                            </li>
+                          <li>등기이사 보수지급에 관한 규정의 제정, 개정 및 폐지 등</li>
+                        </ul>
+                      </td>
+                      <td>-</td>
+                    </tr>  
+                    <tr>
+                      <td>사외이사후보추천위원회</td>
+                      <td>이용배</td>
+                      <td>여형구, 전상경</td>
+                      <td>
+                        <ul class="functionList">
+                          <li>사외이사후보 추천 및 자격심사 등
+                            </li>
+                        </ul>
+                      </td>
+                      <td>-</td>
+                    </tr>  
+                  </table>
+                </div>
+            </section>
+
+
+          </article>
+
+          <? include "../common/sub_footer.html" ?>
+
+          
+</body>
+</html>

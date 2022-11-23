@@ -1,0 +1,109 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-CI</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content4.css">
+
+    <script src="https://kit.fontawesome.com/96a1703d7f.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    
+          <? include "../common/sub_header.html" ?>
+    
+
+          <div class="visual">
+            <img src="./common/images/topbg.jpg" alt="">
+            <h3>회사소개</h3>
+          </div>
+
+          <div class="subNav">
+            <ul>
+                <li><a href="./sub1_1.html">기업개요</a></li>
+                <li><a href="./sub1_2.html">CEO인사말</a></li>
+                <li><a  href="./sub1_3.html">회사연혁</a></li>
+                <li><a class="current" href="./sub1_4.html">CI</a></li>
+                <li><a href="./sub1_5.html">사업장안내</a></li>
+            </ul>
+          </div>
+
+          <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt;<span> 회사소개 </span>&gt;      <strong> CI </strong>
+                </div>
+                <h2>CI</h2>
+                <p>CI를 통해 현대로템의 정체성과 상징성을 표현합니다.</p>
+            </div>
+            <section class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+            <h3>Word Mark</h3>
+            <img src="./images/content4/ci_image.jpg" alt="wordmark이미지">
+            <h4>‘HYUNDAI ROTEM’의 WORD MARK는
+            </h4>    
+            <p>견고한 고딕계열의 서채로 신뢰감을 주는 이미지로 표현하였으며, ‘t’위의 모티프는 혁신적인 첨단기술(High Technology)을 바탕으로 
+              고도 성장하는 현대로템의 이미지를 상징한다. 
+              Blue Color는 첨단기술과 밝은 미래를, Red Color는 구성원의 진취성과 무한한 에너지를 나타내고 있다.</p>
+            <h3>Logotype</h3>
+            <div class="logotype">
+              <ul>
+                <li>
+                  <span>국문정식사명</span>
+                  <p>현대로템주식회사</p> 
+                </li>
+                <li>
+                  <span>국문약칭사명</span>
+                  <p>현대로템(주)</p> 
+                </li>
+                <li>
+                  <span>영문정식사명</span>
+                  <p>HYUNDAI ROTEM COMPANY</p> 
+                </li>
+              </ul>
+              
+            </div>
+            <p>로고타입은 워터마크와 더불어 현대로템의 이미지를 전달하는 중요한 기본요소로 워터마크가 주는 이미지와 조화될 수 있도록 디자인 되었으며 각각의 글자꼴 형태에 따라 비례 조정한 것이므로 글자의 꼴, 굵기, 비례 등을 임의로 변경하여서는 안된다.</p>
+
+            <h3>Color System</h3>
+            <div>
+              <div class="blue_square"></div>
+              <div class="blue_con">
+                <h4>Rotem Blue</h4>
+                <p>PANTONE 288C<br>
+                  Process Color : C100 M70 Y0 K30<br>
+                  RGB Color : R0 G40 B122</p>
+              </div>
+            </div>
+            <div> 
+              <div class="red_square"></div>
+              <div class="red_con">
+                <h4>Rotem Red</h4>
+                <p>PANTONE 186C<br>
+                  Process Color : C0 M100 Y100 K0<br>
+                  RGB Color : R255 G0 B0</p>
+              </div>
+            </div>
+            </section>
+
+          </article>
+
+
+          <? include "../common/sub_footer.html" ?>
+          
+</body>
+</html>

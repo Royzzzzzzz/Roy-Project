@@ -1,0 +1,123 @@
+/* 기업개요 본문영역 */
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#content .titleArea .subtext:first-of-type{
+    font-size: 2em;
+    color: #333; 
+    font-weight: 400;   
+}
+#content .titleArea span:last-child{
+    font-size: 2.5rem;
+    color: #0a2369; 
+    font-weight: 500;   
+}
+.titleArea .subtext{
+    color: #666;
+}
+.contentArea h3{
+    margin-top: 150px;
+    font-size: 1.5em;
+}
+.nameCard{
+    width: 1200px;
+}
+.nameCard h3{
+    font-size: 1.250em;
+    color: #333;
+    margin-top: 100px;
+}
+.nameCard span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.nameCard ul{
+    display: flex;
+    margin: 40px 0 0 20px;
+}
+.nameCard li{
+    border: 2px solid #ccc;
+    margin-right: 40px;
+    width: 100%;
+    padding: 50px 40px;
+    position: relative;
+}
+.nameCard p{
+    padding: 5px 0 15px;
+    color: #0a2369;
+    margin-bottom: 20px;
+}
+.nameCard p::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 40px;
+    top: 120px;
+    width: 70%;
+    height: 1px;
+    background: #0a2369;
+}
+.nameCard li:hover{
+    border-color: #0a2369;
+    transition: all .5s ease-out;
+}
+.nameCard dl{
+    text-align: justify;
+    letter-spacing: .5px;
+    
+}
+.nameCard dt{
+    font-size: 1.250em;
+    margin: 10px 0;
+    color: #666;
+}
+.nameCard dd{
+    font-size: 1.125em;
+}
+.table{
+    position: relative;
+    margin-bottom: 400px;
+}
+.table h3{
+    font-size: 2rem;
+    color: #fff;
+    margin: 100px 0 50px;
+    position: absolute;
+    top: 50px;
+    left: 440px;
+}
+.table .background{
+    position: relative;
+    left: 50%;
+    margin-left: -1000px;
+    margin-top: 150px;
+    filter: brightness(0.8);
+}
+table{
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 100px 30px;
+    border-top: none;
+    position: absolute;
+    top: 260px;
+    left: 0;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+table th{
+    border: 1px solid #ccc;
+    background: #eee;
+    padding: 10px;
+}
+table .functionList{
+    margin-left: 25px;
+    text-align: left;
+    list-style: circle;
+}
+table td{
+    border: 1px solid #ccc;
+    padding: 10px;
+}

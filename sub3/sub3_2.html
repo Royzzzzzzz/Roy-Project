@@ -1,0 +1,315 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투자정보-재무정보</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content2.css">
+
+    <script src="https://kit.fontawesome.com/96a1703d7f.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+          <? include "../common/sub_header.html" ?>
+          <div class="visual">
+            <img src="./common/images/topbg.jpg" alt="">
+            <h3>투자정보</h3>
+          </div>
+
+          <div class="subNav">
+            <ul>
+                <li><a href="./sub3_1.html">지배구조</a></li>
+                <li><a class="current" href="./sub3_2.html">재무정보</a></li>
+                <li><a href="./sub3_3.html">신용등급</a></li>
+                <li><a href="./sub3_4.html">공시자료</a></li>
+            </ul>
+          </div>
+
+          <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt;<span> 투자정보 </span>&gt;      <strong> 재무정보 </strong>
+                </div>
+                <h2>재무정보</h2>
+                <p class="subtext">“<span>현대로템의 주요 재무현황</span>을 확인하실 수 있습니다.”</p>
+            </div>
+            <section class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+                
+                <div class="table">
+                  <h3>요약 재무정보</h3>
+                  <span>(단위)억원</span>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>구분</th>
+                        <th>2016년</th>
+                        <th>2017년</th>
+                        <th>2018년</th>
+                        <th>2019년</th>
+                        <th>2020년</th>
+                        <th>2021년</th>
+                      </tr>
+                    </thead>
+                    <tr>
+                      <td>유동자산</td>
+                      <td>29,097</td>
+                      <td>26,199</td>
+                      <td>25,732</td>
+                      <td>27,092</td>
+                      <td>27,783</td>
+                      <td>26,798</td>
+                    </tr>
+                    <tr>
+                        <td>비유동자산</td>
+                        <td>15,635</td>
+                        <td>14,640</td>
+                        <td>14,290</td>
+                        <td>13,751</td>
+                        <td>14,191</td>
+                        <td>14,274</td>
+                    </tr>
+                    <tr class="bg_lightblue">
+                        <td>자산총계</td>
+                        <td>44,732</td>
+                        <td>40,839</td>
+                        <td>40,021</td>
+                        <td>40,843</td>
+                        <td>41,974</td>
+                        <td>41,072</td>
+                    </tr>
+                    <tr>
+                        <td>유동부채</td>
+                        <td>16,412</td>
+                        <td>13,418</td>
+                        <td>17,295</td>
+                        <td>22,920</td>
+                        <td>22,303</td>
+                        <td>20,907</td>
+                    </tr>
+                    <tr>
+                        <td>비유동부채</td>
+                        <td>13,648</td>
+                        <td>13,238</td>
+                        <td>11,647</td>
+                        <td>9,094</td>
+                        <td>6,209</td>
+                        <td>7,483</td>
+                    </tr>
+                    <tr class="bg_lightred" >
+                        <td>부채총계</td>
+                        <td>30,060</td>
+                        <td>26,656</td>
+                        <td>28,942</td>
+                        <td>32,014</td>
+                        <td>28,512</td>
+                        <td>28,390</td>
+                    </tr>
+                    <tr>
+                        <td>자본금</td>
+                        <td>4,250</td>
+                        <td>4,250</td>
+                        <td>4,250</td>
+                        <td>4,250</td>
+                        <td>5,457</td>
+                        <td>5,457</td>
+                    </tr>
+                    <tr>
+                        <td>기타불입자본</td>
+                        <td>4,084</td>
+                        <td>4,084</td>
+                        <td>4,084</td>
+                        <td>5,590</td>
+                        <td>6,702</td>
+                        <td>5,198</td>
+                    </tr>
+                    <tr>
+                        <td>기타자본구성요소</td>
+                        <td>-6</td>
+                        <td>-23</td>
+                        <td>-41</td>
+                        <td>-34</td>
+                        <td>2,675</td>
+                        <td>2,758</td>
+                    </tr>
+                    <tr>
+                        <td>이익잉여금</td>
+                        <td>5,592</td>
+                        <td>5,129</td>
+                        <td>2,146</td>
+                        <td>-1,566</td>
+                        <td>-1,199</td>
+                        <td>-483</td>
+                    </tr>
+                    <tr>
+                        <td>비지배지분</td>
+                        <td>752	</td>
+                        <td>743</td>
+                        <td>640</td>
+                        <td>588</td>
+                        <td>-173</td>
+                        <td>-248</td>
+                    </tr>
+                    <tr class="bg_lightgrey">
+                        <td>자본총계</td>
+                        <td>14,672</td>
+                        <td>14,183</td>
+                        <td>11,079</td>
+                        <td>8,829</td>
+                        <td>13,462</td>
+                        <td>12,682</td>
+                    </tr>        
+                    
+                  </table>
+                </div>
+
+                <div class="table">
+                    <h3>요약 연결손익계산서</h3>
+                    <span>(단위)억원</span>
+                    <table>
+                      <thead>
+                        <tr>
+                        <th>구분</th>
+                        <th>2016년</th>
+                        <th>2017년</th>
+                        <th>2018년</th>
+                        <th>2019년</th>
+                        <th>2020년</th>
+                        <th>2021년</th>
+                        </tr>
+                      </thead>
+                      <tr>
+                        <td>매출액</td>
+                        <td>29,848</td>
+                        <td>27,257</td>
+                        <td>24,119</td>
+                        <td>24,593</td>
+                        <td>27,853</td>
+                        <td>28,725</td>
+                      </tr>
+                      <tr>
+                        <td>매출원가</td>
+                        <td>26,971</td>
+                        <td>25,434</td>
+                        <td>24,276</td>
+                        <td>25,532</td>
+                        <td>25,408</td>
+                        <td>26,197</td>
+                      </tr>
+                      <tr>
+                          <td>영업이익</td>
+                          <td>1,062</td>
+                          <td>454</td>
+                          <td>-1,962</td>
+                          <td>-2,799</td>
+                          <td>821</td>
+                          <td>802</td>
+                      </tr>
+                      <tr>
+                          <td>기타수익</td>
+                          <td>1,329</td>
+                          <td>1,377</td>
+                          <td>1,045</td>
+                          <td>968</td>
+                          <td>1,272</td>
+                          <td>1,140</td>
+                      </tr>
+                      <tr>
+                          <td>기타비용</td>
+                          <td>1,395</td>
+                          <td>1,879</td>
+                          <td>1,792</td>
+                          <td>1,254</td>
+                          <td>1,479</td>
+                          <td>1,136</td>
+                      </tr>
+                      <tr>
+                          <td>금융수익</td>
+                          <td>324</td>
+                          <td>346</td>
+                          <td>271</td>
+                          <td>164</td>
+                          <td>169</td>
+                          <td>146</td>
+                      </tr>
+                      <tr>
+                          <td>금융비용</td>
+                          <td>1,095</td>
+                          <td>783</td>
+                          <td>811</td>
+                          <td>582</td>
+                          <td>630</td>
+                          <td>597</td>
+                      </tr>
+                      <tr>
+                          <td>법인세비용차감전순이익</td>
+                          <td>231</td>
+                          <td>-479</td>
+                          <td>-3,241</td>
+                          <td>-3,494</td>
+                          <td>150</td>
+                          <td>353</td>
+                      </tr>
+                      <tr>
+                          <td>법인세비용</td>
+                          <td>-1</td>
+                          <td>-16</td>
+                          <td>-161</td>
+                          <td>-63</td>
+                          <td>-74</td>
+                          <td>-161</td>
+                      </tr>
+                      <tr>
+                          <td>당기순이익</td>
+                          <td>231</td>
+                          <td>-463</td>
+                          <td>-3,080</td>
+                          <td>-3,557</td>
+                          <td>224</td>
+                          <td>514</td>
+                      </tr>
+                      <tr>
+                          <td>지배주주지분</td>
+                          <td>218</td>
+                          <td>-474</td>
+                          <td>-3,008</td>
+                          <td>-3,543</td>
+                          <td>310</td>
+                          <td>665</td>
+                      </tr>
+                      <tr>
+                          <td>(비지배주주지분)</td>
+                          <td>13</td>
+                          <td>11</td>
+                          <td>-72</td>
+                          <td>-14</td>
+                          <td>-86</td>
+                          <td>-151</td>
+                      </tr>        
+                      
+                    </table>
+                  </div>
+            </section>
+
+
+          </article>
+
+          <? include "../common/sub_footer.html" ?>
+
+          
+</body>
+</html>

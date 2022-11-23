@@ -1,0 +1,55 @@
+/* 기업개요 본문영역 */
+#content h2{
+    margin-bottom: 200px;
+}
+#content {
+    position: relative;
+}
+#content .contentArea{
+    position: relative;
+}
+#content .contentArea .blueBox{
+    width: 650px;
+    height: 650px;
+    background: #0a2369;
+    margin-left: 600px;
+}
+#content .contentArea .ceobox{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+#content .contentArea .ceobox img{
+    transition: all 0.5s;
+}
+#content .contentArea .ceobox:hover img{
+    transform: scale(1.02);
+}
+#content .contentArea .blueBox > div{
+    padding: 110px 0 0 50px;
+}
+#content .contentArea .blueBox p:first-child{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+#content .contentArea .blueBox p:last-child{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+#content .contentArea .blueBox > p{
+    padding: 40px 0 0 50px ;
+}
+.blueBox > p span:first-child{
+    font-size: 1.75rem;    
+}
+.blueBox > p span:last-child{
+    font-size: 3rem;
+}
+#content .contentArea .textbox{
+    margin: 100px 0 200px 100px;
+    font-size: 1.125em;
+}

@@ -1,0 +1,103 @@
+/* 인사제도 본문영역 */
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#content .titleArea .subtext:first-of-type{
+    font-size: 2em;
+    color: #333; 
+    font-weight: 400;   
+}
+#content .titleArea .subtext span:first-child{
+    font-size: 2rem;
+    color: #0a2369; 
+    font-weight: 500;   
+}
+.susContent > p{
+    margin: 120px 0 60px;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    color: #666;
+}
+.contentArea .recruit{
+    padding: 50px 0;
+    display: flex;
+}
+.contentArea .recruit dl{
+    width: 250px;
+    height: 250px;
+    border: 2px solid #333;
+    background: #fff;
+    border-radius: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+.contentArea .recruit dl dt{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    position: relative;
+}
+.contentArea .recruit dl dt::after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 65px;
+    height: 2px;
+    width: 120px;
+    background: #0c4da2;
+    animation: text .6s ease-out forwards;
+}
+.contentArea .recruit dl::before{
+    content:"\f061";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 120px;
+    left: 268px;
+}
+.contentArea .recruit dl:last-child:before{
+    display: none;
+}
+.contentArea .recruit dl:first-child dd i{
+    font-size: 6em;
+    margin:  30px 0 0 90px;
+}
+.contentArea .recruit dl:nth-child(2) dd i{
+    font-size: 6em;
+    margin:  30px 0 0 75px;
+}
+.contentArea .recruit dl:nth-child(3) dd i{
+    font-size: 6em;
+    margin:  30px 0 0 65px;
+}
+.contentArea .recruit dl:nth-child(4) dd i{
+    font-size: 6em;
+    margin:  30px 0 0 75px;
+}
+
+
+.contentArea .content{
+    border-top: 3px solid rgba(0, 0, 0, 0.5);
+    margin: 100px 0;
+}
+.contentArea .content dl{
+    border-bottom: 1px solid #999;
+    padding: 40px 40px 70px 40px;
+}
+.contentArea .content dl dt{
+    float: left;
+    font-size: 1.25em;
+    text-align: center;
+    width: 15%;
+    font-weight: 500;
+}
+.contentArea .content dl dd{
+    float: left;
+    width: 85%;
+    text-align: justify;
+}
+

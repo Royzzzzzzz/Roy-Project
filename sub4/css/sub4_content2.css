@@ -1,0 +1,57 @@
+/* 재무정보 본문영역 */
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#content .titleArea .subtext:first-of-type{
+    font-size: 2em;
+    color: #333; 
+    font-weight: 400;   
+}
+#content .titleArea span:last-child{
+    font-size: 2.5rem;
+    color: #0a2369; 
+    font-weight: 500;   
+}
+
+table{
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 100px 30px;
+    border-top: none;
+}
+.contentArea h3{
+    margin-top: 150px;
+    font-size: 1.5em;
+}
+table th{
+    border: 1px solid #ccc;
+    background: #eee;
+    padding: 10px;
+}
+table .functionList{
+    margin-left: 25px;
+    text-align: left;
+    list-style: circle;
+}
+table td{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.table span{
+    float: right;
+}
+.table .bg_lightblue{
+    background: lightblue;
+    font-weight: 600;
+}
+.table .bg_lightred{
+    background: lightpink;
+    font-weight: 600;
+}
+.table .bg_lightgrey{
+    background: #eee;
+    font-weight: 600;
+}

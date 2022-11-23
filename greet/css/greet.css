@@ -1,0 +1,87 @@
+/* 각각의 페이지의 내용 콘텐츠 영역 - 세스코광장-공지사항*/
+#content .content_toptopic{font-family: 'Noto Sans KR', sans-serif; text-align: center; margin-top: 40px;}
+#content .content_toptopic h3{font-weight: 700; font-size: 2.25em; color: #333; margin-bottom: 16px;}
+
+/* 폼 공통영역 */
+.row{margin-bottom: 24px;}
+.row label{display: block; font-weight: 500; font-size: 1.125em; margin: 0 0 12px 4px;}
+input, textarea, select{width: 100%; height: 56px; border: 1px solid #ececec; border-radius: 4px; background: rgba(255, 255, 255, .5); padding: 12px 16px 13px 16px; box-sizing: border-box; font-size: 1.125em; font-weight: 500;}
+input:focus, select:focus, textarea:focus{outline-color: rgba(25, 121, 189, .5);}
+input::placeholder, textarea::placeholder, select::selection{color: #C1C1C1; font-weight: 300; font-family: 'Noto Sans KR', sans-serif; font-size: 16px;}
+.disabled_input{background-color: #f8f8f8;}
+    /* Change the color to your own background color */
+input:-webkit-autofill,input:-webkit-autofill:hover,input:-webkit-autofill:focus,input:-webkit-autofill:active {transition: background-color 5000s ease-in-out 0s;}
+    /* select */
+select {background:url(../../concert/data/arrow.png) no-repeat 90% 50%; -webkit-appearance: none;-moz-appearance: none;appearance : none;font-family: inherit; color: #333; font-size: 1.125em; font-weight: 400; background-size: 20%;}
+select::-ms-expand {display: none;}
+    /* btn_wrap */
+.btn_wrap{overflow: hidden; text-align: center;}
+.btn{display: inline-block; width: -webkit-fill-available; padding: 15px 0 16px; border-radius: 4px; border: 1px solid #0a2369; box-sizing: border-box; position: relative;
+    font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 1em; text-align: center; cursor:pointer; overflow: hidden;}
+.btn_wrap .btn1{color: #fff; background: #0a2369; width: 120px;}
+.btn_wrap .btn2{color: #0a2369; background: #fff; width: 120px;}
+.btn_wrap li .btn1::before, .btn_wrap li .btn2::before{content: ''; display: block; width: 100%; height: 100%; border-radius: 100%; background:rgba(255,255,255,.15); position: absolute; left: 0; bottom: 0; transition: all .2s; transform: translate(0px, 160%) scale(1.2, 2);}
+.btn_wrap li:hover .btn1::before, .btn_wrap li:hover .btn2::before{transform: translate(0,0%) scale(1.2,2);}
+
+.btn_wrap2 li .btn{margin-right: 4px;}
+.btn_wrap2 li:last-child .btn{margin-right: 0;}
+.btn_wrap2{position: relative; left: 50%; margin-left: -122px; margin-top: 72px; overflow: hidden;}
+.btn_wrap2 li{float: left;}
+
+/* search */
+.search{padding: 32px 0; border-radius: 4px; margin-bottom: 72px; margin-top: 40px; box-shadow: 0px 4px 13px 0px rgb(82 63 105 / 5%); border: 1px solid #f8f8f8;}
+.search_form{overflow: hidden; position: relative; left: 50%; margin-left: -418px;}
+#find{width: 160px; overflow: hidden;}
+#search{background: url(../../concert/data/search.png)no-repeat 16px center; padding-left: 56px; background-size: 20%; background-size: 5%;}
+#list_search1,#list_search2,#list_search3{float: left;}
+#list_search1{margin-right: 4px;}
+#list_search2{width: 420px;}
+#list_search3{margin-top: 1.3px; left: 0; margin-left: 8px; position: relative;}
+
+/* tb_top */
+.tb_top{overflow: hidden;}
+.tb_top p{float: left; font-size: 1.125em; color: #666; position: relative; top: 50%; margin-top: 9px;}
+.tb_top p span{font-weight: 700; font-size: 1.25em; color: #0a2369;}
+
+/* scale */
+.scale{width: 140px; float: right; font-size: 16px;}
+
+/* table */
+table{width: 100%; margin-top: 12px; text-align: center;}
+thead{height: 70px; background-color: #f8f8f8; font-size: 1.125em; color: #333; border-top: 2px solid #ececec; border-bottom: 2px solid #ececec;}
+thead th{font-weight: 400;}
+tbody{height: 80px; border-top: 2px solid #f8f8f8; border-bottom: 2px solid #f8f8f8; font-size: 1.125em; color: #666;}
+tbody tr:hover{background: rgba(25, 121, 189, .1);}
+.list_item2{color: #333;}
+tbody tr:hover .list_item2{text-decoration: underline;}
+.list_title2, .list_item2{text-align: left; padding-left: 32px;}
+
+/* page_button */
+.btn_wrap li{text-align: right;}
+#page_button{margin-top: 18px; margin-bottom: 120px; text-align: right; position: relative;}
+#page_num a{display: inline-block; width: 40px; height: 40px; font-size: 1.125em; color: #0a2369; margin: 0 4px;}
+#page_num b{display: inline-block; width: 40px; height: 40px; font-size: 1.125em; color: #fff; position: relative; margin: 0 4px;}
+#page_num b::before{content: ''; display: block; width: 40px; height: 40px; background: #0a2369; border-radius: 50px; position: absolute; left: 50%; top: 50%; margin: -25px 0 0 -20px; z-index: -10;}
+#page_num i{color: #999; margin: 0 16px;}
+#page_num{padding-top: 16px; text-align: center;}
+#page_button .btn_write{left: 0; margin-left: 0; margin-top: 0; display: inline-block;}
+
+/* board_form */
+.board_form{padding: 72px 5% 0; border: 1px solid #f8f8f8; border-radius: 4px; box-shadow: 0px 4px 13px 0px rgb(82 63 105 / 5%); margin: 56px 0 120px;}
+.row textarea#text_content{height: 180px; width: 1080px; resize: vertical;}
+.board_form #page_button{margin-top: 56px; margin-bottom: 56px; border-top: 1px solid #ecec; padding-top: 56px;}
+.board_form #page_button .btn_wrap2{margin-top: 0;}
+
+/* view_form */
+.view_form{padding: 72px 5% 0; border: 1px solid #f8f8f8; border-radius: 4px; box-shadow: 0px 4px 13px 0px rgb(82 63 105 / 5%); margin: 56px 0 120px;}
+.view_title{border-bottom: 1px solid #ececec;}
+#view_title1{text-align: center; font-weight: 700; font-size: 1.5em; margin-bottom: 32px;}
+#view_title2{overflow: hidden; text-align: center; color: #666;}
+#view_title2 ul{margin: 0 auto; width: fit-content;}
+#view_title2 ul li{float: left; font-size: 1.125em;}
+#view_title2 ul li:nth-child(2)::before, #view_title2 ul li:nth-child(2)::after{content: ''; display: inline-block; width: 3px; height: 3px; background: rgba(25, 121, 189, 1); border-radius: 50px; margin: 6px 24px; position: relative; top: 50%; margin-top: -2px;}
+#view_title3 .btn_wrap{margin-top: 32px;}
+#view_content{margin: 40px 0; font-size: 1.125em;}
+.view_form .btn_wrap{margin-top: 0;}
+.view_form .view_gbtn{margin-top: 0; padding: 10px 0; margin-left: 900px;}
+#view_content{text-align: center;}

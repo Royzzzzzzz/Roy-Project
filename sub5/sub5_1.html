@@ -1,0 +1,100 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지속가능경영-지향점</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content1.css">
+
+    <script src="https://kit.fontawesome.com/96a1703d7f.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+
+          <? include "../common/sub_header.html" ?>
+          <div class="visual">
+            <img src="./common/images/topbg.jpg" alt="상단이미지">
+            <h3>지속가능경영</h3>
+          </div>
+
+          <div class="subNav">
+            <ul>
+                <li><a class="current" href="./sub5_1.html">지속가능경영</a></li>
+                <li><a href="./sub5_2.html">윤리경영</a></li>
+                <li><a href="./sub5_3.html">환경경영</a></li>
+                <li><a href="./sub5_4.html">사회공헌</a></li>
+            </ul>
+          </div>
+
+          <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt;<span> 지속가능경영 </span>&gt;      <strong> 지향점 </strong>
+                </div>
+                
+                <h2>지속가능경영 지향점</h2>
+                <p class="subtext">“<span>창의적 혁신으로</span> 이해관계자들과 함께 지속성장.”</p>
+                
+            </div>
+            <div class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+                  <div class="susContent">
+                    <p>
+                      <span>Planet과 People이 함께 Prosper하는</span><br>
+                      <span>지속가능경영 전략추진</span>
+                    </p>
+                    <div class="principle">
+                      Principles of Governance
+                    </div>
+                    <div>
+                      <ul>
+                        <li>Planet</li>
+                        <li>People</li>
+                        <li>Prosperity</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ol>
+                        <li>
+                            <p style="margin-left: 30px;">Climate<br>
+                              Smart</p>
+                            <p>경영활동이 줄 수 있는<br> 부정적인 환경 영향 최소화<br>기후변화로 인한 리스크 관리</p>
+                        </li>
+                          <li><p>Responsible<br>
+                          Partner</p>
+                          <p>임직원과 지역 및 글로벌 사회<br>
+                          즉 People과 책임있게<br>
+                          공존하는 노력</p>
+                        </li>
+                          <li><p>Green<br>
+                          Innovation</p> 
+                          <p>다 함께 번영하는 친환경,<br>
+                          스마트, 안전한 미래를 창조</p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  
+                </div>
+
+
+          </article>
+
+          <? include "../common/sub_footer.html" ?>
+
+          
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* 사업분야 본문영역 */
+.contentArea .mainimage > img{
+    width: 1200px;
+    height: 600px;
+    margin: 100px 0 ;
+}
+.contentArea h3{
+    font-size: 2em;
+    text-align: center;
+}
+.contentArea > p{
+    font-size: 1.125em;
+    text-align: center;
+    margin: 100px 0;
+}
+.contentArea .table{
+    border: 1px solid #eee;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    margin: 100px 0;
+}
+.contentArea .table td:first-child{
+    background: #eee;
+}
+.contentArea .table tr,td{
+    border: 1px solid #eee;
+}

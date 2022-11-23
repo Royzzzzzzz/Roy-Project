@@ -1,0 +1,190 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-사업장안내</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content5.css">
+
+    <script src="https://kit.fontawesome.com/96a1703d7f.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+
+</head>
+<body>
+    
+          <? include "../common/sub_header.html" ?>
+    
+          <div class="visual">
+            <img src="./common/images/topbg.jpg" alt="">
+            <h3>회사소개</h3>
+          </div>
+
+          <div class="subNav">
+            <ul>
+                <li><a href="./sub1_1.html">기업개요</a></li>
+                <li><a href="./sub1_2.html">CEO인사말</a></li>
+                <li><a  href="./sub1_3.html">회사연혁</a></li>
+                <li><a href="./sub1_4.html">CI</a></li>
+                <li><a class="current" href="./sub1_5.html">사업장안내</a></li>
+            </ul>
+          </div>
+
+          <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt;<span> 회사소개 </span>&gt;      <strong> 사업장안내 </strong>
+                </div>
+                <h2>사업장 안내</h2>
+            </div>
+            <div class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+                <ul class="tabNav">
+                    <li><a class="tab tab1 tabCurrent" href="#">본사</a></li>
+                    <li><a class="tab tab2" href="#">창원공장</a></li>
+                    <li><a class="tab tab3" href="#">당진공장</a></li>
+                </ul>
+                <section class="map">
+                    <h3 class="hidden">본사</h3>
+                    <div id="map1"></div>
+                        <dl>    
+                            <dt>
+                                주소 및 연락처
+                                <i class="fa-solid fa-circle-phone"></i><br>
+                                <span>현대로템 의왕연구소</span>
+                            </dt>
+                            <dd>
+                                <p>
+                                    <span>주소</span><br>
+                                    경기도 의왕시 철도박물관로 37
+
+                                </p>
+                                <p>
+                                    <span>전화</span><br>
+                                    (031)8090-8114
+                                </p>
+                                <p>
+                                    <span>팩스</span><br>
+                                    (031)1234-5678
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>교통편 및 주차</dt>
+                            <dd>
+                                <p>
+                                    <span>교통</span><br>
+                                    의왕역 2번 출구에서 도보로 10분<br>
+                                    부곡주유소,현대로템 정류장(27001)하차 후 도보로 5분
+                                </p>
+                                <p>
+                                    <span>주차</span><br>
+                                    부곡119안전센터에서 500m 직진 앞 방문객 주차장 이용
+                                </p>
+                            </dd>
+                        </dl>
+                </section>
+                
+                <section class="map">
+                    <h3 class="hidden">현대로템 창원공장</h3>
+                    <div id="map2"></div>
+                        <dl>
+                            <dt>
+                                주소 및 연락처
+                                <i class="fa-solid fa-circle-phone"></i><br>
+                                <span>현대로템 창원공장</span>
+                            </dt>
+                            <dd>
+                                <p>
+                                    <span>주소</span><br>
+                                    경상남도 창원시 성산구 창원대로 488
+
+                                </p>
+                                <p>
+                                    <span>전화</span><br>
+                                    (055)273-1341
+                                </p>
+                                <p>
+                                    <span>팩스</span><br>
+                                    (055)1234-5678
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>교통편 및 주차</dt>
+                            <dd>
+                                <p>
+                                    <span>교통</span><br>
+                                    자동차 검사장 정류장(218802)하차 후 도보로 5분
+                                </p>
+                                <p>
+                                    <span>주차</span><br>
+                                    한국교통안전공단 500m 직진 앞 방문객 주차장 이용
+                                </p>
+                            </dd>
+                        </dl>
+                </section>
+                
+                <section class="map">
+                    <h3 class="hidden">현대로템 당진공장</h3>
+                    <div id="map3"></div>
+                        <dl>
+                            <dt>
+                                주소 및 연락처
+                                <i class="fa-solid fa-circle-phone"></i><br>
+                                <span>현대로템 당진공장</span>
+                            </dt>
+                            <dd>
+                                <p>
+                                    <span>주소</span><br>
+                                    충청남도 당진시 송악읍 북부산업도로 1480 현대로템㈜
+
+                                </p>
+                                <p>
+                                    <span>전화</span><br>
+                                    (041)680-0600
+                                </p>
+                                <p>
+                                    <span>팩스</span><br>
+                                    (041)1234-5678
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>교통편 및 주차</dt>
+                            <dd>
+                                <p>
+                                    <span>교통</span><br>
+                                    현대제철 정류장(3000169)하차 후 도보로 5분
+                                </p>
+                                <p>
+                                    <span>주차</span><br>
+                                    현대제철 당진제철소(충남 당진시 송악읍 북부산업로 1480)
+                                </p>
+                            </dd>
+                        </dl>
+                </section>
+            </div>
+
+          </article>
+
+
+          <? include "../common/sub_footer.html" ?>
+          
+          <script src="./js/tab.js"></script>
+          <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5b90da70ea1bf65d18301a26ef216b6a"></script>
+          <script src="./js/kakao_map2.js"></script>
+</body>
+</html>

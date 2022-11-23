@@ -1,0 +1,93 @@
+<?
+   session_start();
+   @extract($_GET);
+   @extract($_POST);
+   @extract($_SESSION);
+   ini_set('display_errors', 0);
+  ini_set('display_startup_errors', 0);
+  error_reporting(E_ALL);
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-CEO인사말</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content2.css">
+
+    <script src="https://kit.fontawesome.com/96a1703d7f.js"
+      crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    
+
+          <? include "../common/sub_header.html" ?>
+
+          <div class="visual">
+            <img src="./common/images/topbg.jpg" alt="상단이미지">
+            <h3>회사소개</h3>
+          </div>
+
+          <div class="subNav">
+            <ul>
+                <li><a href="./sub1_1.html">기업개요</a></li>
+                <li><a class="current" href="./sub1_2.html">CEO인사말</a></li>
+                <li><a href="./sub1_3.html">회사연혁</a></li>
+                <li><a href="./sub1_4.html">CI</a></li>
+                <li><a href="./sub1_5.html">사업장안내</a></li>
+            </ul>
+          </div>
+
+          <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span><i class="fa-solid fa-house"></i></span> &gt;<span> 회사소개 </span>&gt;      <strong> CEO인사말 </strong>
+                </div>
+                <h2>CEO인사말</h2>
+            </div>
+            <div class="contentArea">
+                <!-- 본문 콘텐츠 영역 -->
+               <div class="ceobox">
+                <img src="./images/content2/ceo.jpg" alt="대표이사">
+                </div>
+                <div class="blueBox">
+
+                  <div>
+                    <p>품질 최우선,<br>
+                      기본과 원칙 존중,<br>
+                      위기관리를 통해</p>
+                    <p>기업가치 향상과 고객 행복을<br>
+                      만들어 가겠습니다.</p>
+                  </div>
+                  <p>
+                    <span>대표이사/사장</span><br>
+                    <span>이용배</span>
+                  </p>
+                </div>
+                
+                  <div class="textbox">
+                    <p>글로벌 중공업 회사 현대로템 홈페이지를 방문해 주셔서 감사합니다.<br>
+                    현대자동차 그룹의 일원인 현대로템은 지난 40여 년간 철도사업과 방위사업, 플랜트 설비 및 환경사업을 수행하며<br> 
+                    국가 기간산업 발전의 밑거름이 되어 왔습니다.<br><br><br>
+                    현대로템은 세계 50여개국에 진출하여 확보한 네트워크를 기반으로 글로벌 경영을 가속화하고 있으며,<br>
+                    시속 430km의 동력분산식 고속열차와 자기부상열차, 로봇 및 무인 전투체계 등 신 성장동력의 독자적 원천기술 개발 및<br> 
+                    해외 플랜트 사업의 확대를 통해 미래 경쟁력을 준비하고 있습니다.<br><br><br>
+                    저희 현대로템 임직원들은 불굴의 의지로 세계시장에서 경쟁우위를 점하고 지속적인 경영혁신과 투명경영을 통해 기업의 사회적 책임을 다하겠습니다.<br>
+                    고객 만족을 최상의 가치로 삼아, 보다 편리하고 행복한 미래사회를 만드는데 진력하는 현대로템이 되겠습니다.<br>
+                    감사합니다.
+                    </p>
+                    
+                  </div>
+            </div>
+
+          </article>
+
+
+
+          <? include "../common/sub_footer.html" ?>
+</body>
+</html>

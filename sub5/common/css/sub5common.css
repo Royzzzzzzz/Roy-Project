@@ -1,0 +1,89 @@
+@keyframes sub_visual{
+    from{transform:scale(1.1);}
+    to{transform:scale(1);}
+}
+.visual img{animation:sub_visual 5s 1 ease-out;}
+/* 서브페이지 공통영역 */
+.visual{
+    width: 2000px; 
+    height: 500px;
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin-left: -1000px;
+    overflow: hidden;
+}
+.visual img{
+    filter: brightness(0.8);
+}
+.visual h3{
+    font-size: 2.5em;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    margin-left: -74px;
+    font-weight: 400;
+}
+.subNav{
+    border-bottom: 1px solid #ccc;
+}
+.subNav ul{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 220px;
+}
+.subNav ul li{
+    float: left;
+    width: 240px;
+    text-align: center;
+}
+.subNav ul li a{
+    display: block;
+    padding: 20px 0;
+    font-size: 1.2em;
+    color: #666;
+}
+.subNav ul li a:hover{
+    background: #0a2369;
+    color: #fff;
+    font-weight: 500;
+}
+.subNav ul li .current{
+    background: #0a2369;
+    color: #fff;
+}
+
+#content{
+    width: 1200px;
+    margin: 0 auto;
+}
+#content .titleArea{
+    position: relative;
+}
+#content .titleArea .lineMap{
+    margin: 100px 0 40px 515px;
+    color: #999;
+}
+#content .titleArea h2{
+    font-size: 3rem;
+    font-weight: 700;   
+    margin: 40px 0 100px 0;
+    text-align: center;
+}
+#content .titleArea .subtext{
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0;
+    animation: text .6s ease-out forwards;
+}
+#content .titleArea .subtext::after {
+    content: '';
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    height: 40px;
+    width: 5px;
+    background: #0c4da2;
+}
