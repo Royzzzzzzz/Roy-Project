@@ -125,7 +125,7 @@
 							{
 						?>
 						<li><a href="modify_form.php?num=<?=$num?>&page=<?=$page?>" class="btn btn1">수정</a></li>
-						<li><a href="javascript:del('delete.php?num=<?=$num?>')" class="btn btn2">삭제</a></li>
+						<li><a href="javascript:del('delete.php?num=<?=$num?>')" class="btn btn3">삭제</a></li>
 						<?
 							}
 						?>

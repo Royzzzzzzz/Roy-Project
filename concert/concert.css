@@ -22,7 +22,7 @@ select::-ms-expand {display: none;}
     font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 1em; text-align: center; overflow: hidden; position: relative;}
 .btn_wrap .btn::before{content: ''; display: block; width: 100%; height: 100%; border-radius: 100%; background:rgba(255,255,255,.15); position: absolute; left: 0; bottom: 0; transition: all .2s; transform: translate(0px, 160%) scale(1.2, 2);}
 .btn_wrap div:hover .btn::before, .btn_wrap li:hover .btn::before{transform: translate(0,0%) scale(1.2,2);}
-.btn_wrap .btn.btn_nomal{background: #fff; color: #0a2369;}
+.btn_wrap .btn.btn_nomal{background: rgb(255, 0, 0); color: #fff;}
 .btn_wrap .btn.btn_solid{background: #0a2369; color: #fff;}
 .btn_double>div, .btn_double>li{float: left;}
 .btn_double>div:first-child .btn, .btn_double>li:first-child .btn{margin-right: 4px;}
