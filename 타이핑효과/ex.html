@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<style>
+	  .main-text {
+			font-family: '돋움', serif;
+			font-size: 36px;
+			color: #333;
+			text-align: left;
+			margin: 30px auto;
+			line-height: 2em;
+			writing-mode:tb-rl;
+   }
+	</style>
+         
+
+				
+					<script src="typer.js"></script>
+					<script>
+						
+					window.onload=function(){	
+						var el       = document.querySelector('.main-text')
+						var options  = {
+							text: '지 금 이 ─ 아 니 면 \n 세 상 어 디 에 도 없 는 \n 주 도 적 인 ─ 퍼 블 리 셔 \n 최 순 실 입 니 다',
+					  textSpeed: 95,
+					  blinkSpeed: 0.06
+						}
+
+						var instance = new tinytyper(el, options);
+						
+					}
+					</script>
+					<!-- 첫페이지 text animate 효과 e-->	
+	
+</head>
+<body>
+		<div class="main-text"></div>
+</body>
+</html>
